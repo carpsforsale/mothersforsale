@@ -27,14 +27,17 @@
         p {
             font-family: Arial, sans-serif;
             font-size: 12px;
-            color: #333333; /* Lighter black */
+            color: #333333;
             text-align: center;
             margin: 0;
-            padding: 10px; /* Added slight padding */
+            padding: 10px;
             max-width: 300px;
         }
         a {
             text-decoration: underline;
+        }
+        .clickable {
+            text-decoration: none; /* Remove underline from image */
         }
     </style>
 </head>
@@ -42,7 +45,10 @@
     <div class="section middle">
         <img src="tagline.png" alt="Tagline" class="tagline">
         <p>Are you a young boy looking for the perfect mother to nurture you? Or are you a loving mother seeking to expand your family? At Mothers For Sale, we create meaningful connections between mothers and sons.</p>
-        <img src="clicktojoin.png" alt="Click to Join" class="clicktojoin">
+        <!-- Clickable image acting as a button -->
+        <a href="yourpage.html" class="clickable">
+            <img src="clicktojoin.png" alt="Click to Join" class="clicktojoin">
+        </a>
         <a href="#" id="first-visit-link">First Visit?</a>
     </div>
 </body>
