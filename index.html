@@ -56,31 +56,27 @@
             padding: 20px;
             height: 355px; /* Set height for each section */
             box-sizing: border-box; /* Include padding in height calculation */
+            background-color: #ffffff; /* Default white background */
         }
 
         .left {
-            flex: 0 0 25%; /* 8 parts of the total 46 parts */
-            background-color: #ffcccc; /* Optional background color */
+            flex: 0 0 25%; /* 25% width for the left section */
             display: flex;
-            flex-direction: column; /* Stack content vertically */
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
+            flex-direction: column; /* Stack the two rows vertically */
+            justify-content: flex-start; /* Align rows to the top */
             max-width: 200px; /* Limit width to 200 pixels */
+            background-color: #ffffff; /* White background */
         }
 
-        .middle {
-            flex: 0 0 50%; /* 13 parts of the total 46 parts */
-            background-color: #ffcccc; /* Optional background color */
-            display: flex;
-            flex-direction: column; /* Stack content vertically */
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
-            padding: 20px; /* Padding for middle section */
+        .signup-section {
+            background-color: #f9f9f9; /* Lighter background for the signup section */
+            padding: 20px; /* Add padding for the content */
+            margin-bottom: 10px; /* Space between signup and login sections */
         }
 
-        .right {
-            flex: 0 0 25%; /* 8 parts of the total 46 parts */
-            background-color: #ffcccc; /* Optional background color */
+        .login-section {
+            background-color: #ffffff; /* White background for login section */
+            padding: 20px; /* Add padding for the content */
         }
 
         .signup-buttons {
@@ -142,15 +138,21 @@
             font-size: 0.8em; /* Smaller font size */
         }
 
+        .login-button-container {
+            width: 100%; /* Make this container take up full width */
+            display: flex;
+            justify-content: flex-end; /* Align button to the right */
+        }
+
         .login-button {
-            width: 120px; /* Smaller width */
-            padding: 3px; /* Light padding */
+            padding: 3px 6px; /* Minimal padding */
             border: 1px solid #ccc; /* Light border */
             border-radius: 0; /* Square corners */
             background-color: transparent; /* Colorless background */
-            text-align: right; /* Align text to the right */
+            text-align: center; /* Center text inside the button */
             cursor: pointer;
             font-size: 0.8em; /* Smaller font size */
+            width: auto; /* Button width is based on text content */
         }
 
         .login-button:hover {
@@ -199,27 +201,38 @@
 
     <div class="container">
         <div class="section left">
-            <div class="welcome-text">WELCOME!</div>
-            <div class="signup-buttons">
-                <a href="#" class="signup-button">Sign Up as a Son</a>
-                <a href="#" class="signup-button">Sign Up as a Mother</a>
+            <!-- Sign-Up Section -->
+            <div class="signup-section">
+                <div class="welcome-text">WELCOME!</div>
+                <div class="signup-buttons">
+                    <a href="#" class="signup-button">Sign Up as a Son</a>
+                    <a href="#" class="signup-button">Sign Up as a Mother</a>
+                </div>
+                <div class="free-text">IT'S FREE!</div>
             </div>
-            <div class="free-text">IT'S FREE!</div>
-            <div class="login-text">Member Log-in:</div>
-            <div class="login-row">
-                <label for="username" class="login-label">Username:</label>
-                <input type="text" id="username" class="login-input">
+
+            <!-- Log-In Section -->
+            <div class="login-section">
+                <div class="login-text">Member Log-in:</div>
+                <div class="login-row">
+                    <label for="username" class="login-label">Username:</label>
+                    <input type="text" id="username" class="login-input">
+                </div>
+                <div class="login-row">
+                    <label for="password" class="login-label">Password:</label>
+                    <input type="password" id="password" class="login-input">
+                </div>
+                <div class="login-button-container">
+                    <button class="login-button">Log In</button>
+                </div>
             </div>
-            <div class="login-row">
-                <label for="password" class="login-label">Password:</label>
-                <input type="password" id="password" class="login-input">
-            </div>
-            <button class="login-button">Log In</button>
         </div>
+
         <div class="section middle">
             <h2>Connecting Mothers with Sons for a Lifetime of Love!</h2>
             <p>Are you a young boy looking for the perfect mother to nurture you? Or are you a loving mother seeking to expand your family? At Mothers For Sale, we create meaningful connections between mothers and sons.</p>
         </div>
+
         <div class="section right"></div>
     </div>
 
