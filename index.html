@@ -54,26 +54,34 @@
 
         .section {
             padding: 20px;
+            height: 355px; /* Set height for each section */
+            box-sizing: border-box; /* Include padding in height calculation */
         }
 
         .left, .right {
             flex: 0 0 33.33%; /* 8 parts */
+            background-color: #ffcccc; /* Optional background color */
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
         }
 
         .middle {
             flex: 0 0 50%; /* 13 parts */
+            background-color: #ffcccc; /* Optional background color */
         }
 
         .intro {
             text-align: center;
             font-size: 1.2em;
-            margin-bottom: 40px;
+            margin-bottom: 20px; /* Reduced margin for better spacing */
         }
 
         .signup-buttons {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 10px; /* Space between buttons */
         }
 
         .signup-button {
@@ -83,6 +91,7 @@
             text-decoration: none;
             font-size: 1.2em;
             border-radius: 5px;
+            text-align: center; /* Center text within buttons */
         }
 
         .signup-button:hover {
@@ -125,19 +134,16 @@
     <div class="container">
         <div class="section left">
             <p class="intro">Welcome to the left section! Here you can find information about our services.</p>
+            <div class="signup-buttons">
+                <a href="#" class="signup-button">Sign Up as a Son</a>
+                <a href="#" class="signup-button">Sign Up as a Mother</a>
+            </div>
         </div>
         <div class="section middle">
             <p class="intro">Welcome to the middle section! This area contains the main content and features.</p>
         </div>
         <div class="section right">
             <p class="intro">Welcome to the right section! Here you can find additional resources and links.</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="signup-buttons">
-            <a href="#" class="signup-button">Sign Up as a Son</a>
-            <a href="#" class="signup-button">Sign Up as a Mother</a>
         </div>
     </div>
 
