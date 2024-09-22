@@ -48,6 +48,14 @@
             text-decoration: underline;
         }
 
+        .nav a::after {
+            content: " • "; /* Add dot after each link */
+        }
+
+        .nav a:last-child::after {
+            content: ""; /* Remove dot after the last link */
+        }
+
         .container {
             max-width: 100%; /* Allow full width for the container */
             margin: 0 auto;
@@ -84,9 +92,9 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            width: 800px; /* Match footer width to body */
+            margin: 0 auto; /* Center the footer */
+            position: relative; /* Ensure it follows content */
         }
 
         .disclaimer {
