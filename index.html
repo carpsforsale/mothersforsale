@@ -27,15 +27,13 @@
         header {
             background-color: #ff9999;
             color: white;
-            padding: 5px; /* Reduced padding for a tighter look */
+            padding: 5px 0; /* Reduced padding for a tighter look */
             border-radius: 0 0 20px 20px; /* Rounded bottom */
-            position: relative;
         }
 
         .nav {
             background-color: #ff9999; /* Match header color */
             border-radius: 20px 20px 0 0; /* Rounded top */
-            margin-top: -5px; /* Adjust to overlap with header */
             padding: 5px 0; /* Add padding for nav links */
             display: flex; /* Use flexbox for alignment */
             justify-content: center; /* Center the links */
@@ -45,13 +43,7 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            padding: 0 10px; /* Padding on sides for spacing */
-        }
-
-        .nav a:not(:last-child)::after {
-            content: " • "; /* Add dot after each link except the last */
-            color: white; /* Ensure dot is white */
-            margin: 0 5px; /* Spacing around the dot */
+            padding: 0 15px; /* Padding on sides for spacing */
         }
 
         .nav a:hover {
@@ -93,10 +85,10 @@
             background-color: #ff6666;
             color: white;
             text-align: center;
-            padding: 10px;
             width: 800px; /* Match footer width to body */
             margin: 0 auto; /* Center the footer */
             position: relative; /* Ensure it follows content */
+            padding: 0; /* Removed padding */
         }
 
         .disclaimer {
