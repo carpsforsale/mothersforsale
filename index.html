@@ -89,12 +89,15 @@
             color: white;
             text-decoration: none;
             font-size: 1.2em;
-            border-radius: 5px;
+            border-radius: 25px; /* Rounded for oval shape */
             text-align: center; /* Center text within buttons */
+            width: 200px; /* Set a width for a more oval appearance */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
         }
 
         .signup-button:hover {
             background-color: #cc3333;
+            transform: scale(1.05); /* Slightly enlarge on hover */
         }
 
         footer {
