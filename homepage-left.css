@@ -17,10 +17,9 @@ body {
 
 .signup-section {
     position: relative; /* Set position for absolute children */
-    height: 100px; /* Set the height based on your image */
+    height: auto; /* Allow height to be determined by the image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
-    overflow: hidden; /* Hide any overflow */
 }
 
 .signup-button {
@@ -33,13 +32,13 @@ body {
 .top-button {
     background-image: url('signupbuttons.png');
     background-position: top; /* Position for the top half */
-    background-size: 100% 200%; /* Scale image to fit */
+    background-size: 100% auto; /* Scale width to fit, maintain aspect ratio */
 }
 
 .bottom-button {
     background-image: url('signupbuttons.png');
     background-position: bottom; /* Position for the bottom half */
-    background-size: 100% 200%; /* Scale image to fit */
+    background-size: 100% auto; /* Scale width to fit, maintain aspect ratio */
 }
 
 .login-section {
