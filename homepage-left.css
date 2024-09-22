@@ -24,7 +24,7 @@ body {
 
 .signup-link {
     display: block;
-    height: 100%; /* Adjust based on the image height */
+    height: 100%; /* Full height of the signup section */
     width: 100%;
     position: relative;
 }
@@ -34,10 +34,21 @@ body {
     height: 50%; /* Each link occupies half of the image */
     width: 100%;
     text-decoration: none; /* Remove underline */
+    position: absolute; /* Position for the top and bottom halves */
 }
 
-.signup-button:hover {
-    background-color: transparent; /* Keep static, no hover effect */
+.signup-button.top {
+    background-image: url('signupbuttons.png');
+    background-position: top; /* Position for the top half */
+    background-size: 100% auto; /* Scale width to fit, maintain aspect ratio */
+    top: 0; /* Position at the top */
+}
+
+.signup-button.bottom {
+    background-image: url('signupbuttons.png');
+    background-position: bottom; /* Position for the bottom half */
+    background-size: 100% auto; /* Scale width to fit, maintain aspect ratio */
+    bottom: 0; /* Position at the bottom */
 }
 
 .login-section {
