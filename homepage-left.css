@@ -7,48 +7,41 @@ body {
     margin: 0 auto; /* Center the content */
 }
 
-.logo-container {
-    background-color: white;
-    text-align: left; /* Align logo to the left */
-    padding: 20px; /* Padding on the sides */
-}
-
-.logo {
-    height: 80px; /* Adjusted for a larger logo */
-}
-
 .left-container {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
+    max-width: 200px; /* Max width for the left section */
+    width: 100%; /* Allow it to shrink to fit */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .signup-section {
     background-color: #f9f9f9; /* Lighter background for the signup section */
-    padding: 20px; /* Add padding for the content */
+    padding: 10px; /* Reduced padding for fitting */
     margin-bottom: 10px; /* Space between signup and login sections */
 }
 
 .login-section {
     background-color: #ffffff; /* White background for login section */
-    padding: 20px; /* Add padding for the content */
+    padding: 10px; /* Reduced padding for fitting */
 }
 
 .signup-buttons {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Space between buttons */
+    gap: 5px; /* Space between buttons */
     align-items: center; /* Center align items */
 }
 
 .signup-button {
-    padding: 10px 20px; /* Adjusted padding for a more squeezed shape */
+    padding: 8px 16px; /* Adjusted padding for a more compact shape */
     background-color: #ff6666;
     color: white;
     text-decoration: none;
-    font-size: 0.9em; /* Smaller font size */
+    font-size: 0.8em; /* Smaller font size */
     font-weight: bold; /* Bold text */
     border-radius: 25px; /* Rounded for oval shape */
-    width: 160px; /* Set a width for a squeezed oval appearance */
+    width: 100%; /* Full width to fit container */
     text-align: center; /* Center text */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
@@ -61,13 +54,13 @@ body {
 .welcome-text,
 .free-text {
     margin: 5px 0; /* Space between text and buttons */
-    font-size: 1.1em; /* Slightly larger for visibility */
+    font-size: 1em; /* Adjusted size for visibility */
     font-weight: bold; /* Bold text */
     color: #333; /* Darker color for better contrast */
 }
 
 .login-text {
-    margin: 10px 0 5px; /* Space above and below the login text */
+    margin: 5px 0; /* Space above and below the login text */
     font-weight: normal; /* Unbolded */
     font-size: 0.8em; /* Smaller size */
 }
@@ -76,7 +69,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 8px; /* Space below each row */
+    margin-bottom: 5px; /* Space below each row */
 }
 
 .login-label {
@@ -85,7 +78,7 @@ body {
 }
 
 .login-input {
-    width: 120px; /* Smaller width for input fields */
+    width: 100%; /* Full width to fit container */
     padding: 3px; /* Light padding for input fields */
     border: 1px solid #ccc; /* Light border */
     border-radius: 3px; /* Smaller rounded corners */
