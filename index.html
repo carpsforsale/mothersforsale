@@ -76,15 +76,38 @@
             color: white;
             text-align: center;
             width: 800px;
-            padding: 0;
-            margin: 0; /* Remove margins */
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            padding: 5px 0;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 15px;
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
         }
 
         .new-members {
             text-align: center;
-            font-size: 0.65em; /* Slightly larger font size */
-            margin: 0; /* Remove margin */
-            color: #aaa; /* Lighter text color */
+            font-size: 0.65em;
+            margin: 0;
+            color: #aaa;
+        }
+
+        .copyright {
+            font-size: 0.8em;
+            color: white;
+            margin-top: 10px;
         }
 
         .disclaimer {
@@ -104,7 +127,7 @@
         <nav class="nav">
             <a href="#">Browse</a>
             <a href="#">Help Desk</a>
-            <a href="#">Terms</a>
+            <a href="#">Events</a> <!-- Changed "Terms" to "Events" -->
             <a href="#">Testimonials</a>
             <a href="#">Join</a>
         </nav>
@@ -128,7 +151,13 @@
     </div>
 
     <footer>
-        <p>&copy; 2000 Mothers For Sale. All rights reserved.</p>
+        <div class="footer-nav">
+            <a href="#">FAQ</a>
+            <a href="#">About Us</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <p class="copyright">&copy; 2000 Mothers For Sale. All rights reserved.</p>
     </footer>
 
     <div class="new-members">
