@@ -118,15 +118,40 @@
 
         .login-text {
             margin: 10px 0 5px; /* Space above and below the login text */
-            font-weight: bold; /* Bold text */
+            font-weight: normal; /* Unbolded */
+        }
+
+        .login-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px; /* Space below each row */
+        }
+
+        .login-label {
+            margin-right: 10px; /* Space between label and input */
         }
 
         .login-input {
             width: 160px; /* Set a width for input fields */
-            padding: 8px; /* Padding inside input fields */
-            margin-bottom: 10px; /* Space below each input field */
+            padding: 5px; /* Light padding for input fields */
             border: 1px solid #ccc; /* Light border */
             border-radius: 5px; /* Rounded corners */
+        }
+
+        .login-button {
+            width: 160px;
+            padding: 5px; /* Light padding for the button */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 0; /* Square corners */
+            background-color: transparent; /* Colorless background */
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #eee; /* Light gray hover effect */
         }
 
         footer {
@@ -178,9 +203,15 @@
             </div>
             <div class="free-text">IT'S FREE!</div>
             <div class="login-text">Member Log-in:</div>
-            <input type="text" class="login-input" placeholder="Username">
-            <input type="password" class="login-input" placeholder="Password">
-            <a href="#" class="signup-button">Log In</a>
+            <div class="login-row">
+                <label for="username" class="login-label">Username:</label>
+                <input type="text" id="username" class="login-input">
+            </div>
+            <div class="login-row">
+                <label for="password" class="login-label">Password:</label>
+                <input type="password" id="password" class="login-input">
+            </div>
+            <button class="login-button">Log In</button>
         </div>
         <div class="section middle">
             <h2>Connecting Mothers with Sons for a Lifetime of Love!</h2>
