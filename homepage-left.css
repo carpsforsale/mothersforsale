@@ -13,11 +13,12 @@ body {
     max-width: 200px; /* Max width for the left section */
     width: 100%; /* Allow it to shrink to fit */
     box-sizing: border-box; /* Include padding in width calculation */
+    height: 400px; /* Set the height to 400px */
 }
 
 .signup-section {
     position: relative; /* Set position for absolute children */
-    height: 144px; /* Set to the original height of your image */
+    height: 144px; /* Original height of your image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
 }
