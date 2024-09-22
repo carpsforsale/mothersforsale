@@ -58,8 +58,8 @@
             box-sizing: border-box; /* Include padding in height calculation */
         }
 
-        .left, .right {
-            flex: 0 0 33.33%; /* 8 parts */
+        .left {
+            flex: 0 0 25%; /* 8 parts of the total 46 parts */
             background-color: #ffcccc; /* Optional background color */
             display: flex;
             flex-direction: column; /* Stack content vertically */
@@ -68,14 +68,13 @@
         }
 
         .middle {
-            flex: 0 0 50%; /* 13 parts */
+            flex: 0 0 50%; /* 13 parts of the total 46 parts */
             background-color: #ffcccc; /* Optional background color */
         }
 
-        .intro {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 20px; /* Reduced margin for better spacing */
+        .right {
+            flex: 0 0 25%; /* 8 parts of the total 46 parts */
+            background-color: #ffcccc; /* Optional background color */
         }
 
         .signup-buttons {
@@ -107,13 +106,6 @@
             position: relative; /* Ensure it follows content */
             padding: 0; /* Removed padding */
         }
-
-        .disclaimer {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 40px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -133,18 +125,13 @@
 
     <div class="container">
         <div class="section left">
-            <p class="intro">Welcome to the left section! Here you can find information about our services.</p>
             <div class="signup-buttons">
                 <a href="#" class="signup-button">Sign Up as a Son</a>
                 <a href="#" class="signup-button">Sign Up as a Mother</a>
             </div>
         </div>
-        <div class="section middle">
-            <p class="intro">Welcome to the middle section! This area contains the main content and features.</p>
-        </div>
-        <div class="section right">
-            <p class="intro">Welcome to the right section! Here you can find additional resources and links.</p>
-        </div>
+        <div class="section middle"></div>
+        <div class="section right"></div>
     </div>
 
     <footer>
