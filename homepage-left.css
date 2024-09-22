@@ -20,6 +20,7 @@ body {
     padding: 0; /* No padding since we have the image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
+    height: 100px; /* Adjust based on the height of your image */
 }
 
 .login-section {
@@ -29,7 +30,7 @@ body {
 
 .signup-link {
     display: block;
-    height: 100px; /* Adjust based on the image height */
+    height: 100%; /* Adjust based on the image height */
     width: 100%;
     position: relative;
 }
