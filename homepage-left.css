@@ -19,6 +19,7 @@ body {
     background-color: #f9f9f9; /* Lighter background for the signup section */
     padding: 10px; /* Reduced padding for fitting */
     margin-bottom: 10px; /* Space between signup and login sections */
+    text-align: center; /* Center text within the section */
 }
 
 .login-section {
@@ -40,7 +41,7 @@ body {
     text-decoration: none;
     font-size: 0.8em; /* Smaller font size */
     font-weight: bold; /* Bold text */
-    border-radius: 25px; /* Rounded for oval shape */
+    border-radius: 50px; /* Pointed oval shape */
     width: 100%; /* Full width to fit container */
     text-align: center; /* Center text */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
