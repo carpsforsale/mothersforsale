@@ -71,6 +71,11 @@
         .middle {
             flex: 0 0 50%; /* 13 parts of the total 46 parts */
             background-color: #ffcccc; /* Optional background color */
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            padding: 20px; /* Padding for middle section */
         }
 
         .right {
@@ -163,7 +168,10 @@
             <input type="password" class="login-input" placeholder="Password">
             <a href="#" class="signup-button">Log In</a>
         </div>
-        <div class="section middle"></div>
+        <div class="section middle">
+            <h2>Connecting Mothers with Sons for a Lifetime of Love!</h2>
+            <p>Are you a young boy looking for the perfect mother to nurture you? Or are you a loving mother seeking to expand your family? At Mothers For Sale, we create meaningful connections between mothers and sons.</p>
+        </div>
         <div class="section right"></div>
     </div>
 
