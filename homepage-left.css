@@ -17,7 +17,7 @@ body {
 
 .signup-section {
     position: relative; /* Set position for absolute children */
-    height: 200px; /* Set to the original height of your image */
+    height: 144px; /* Set to the original height of your image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
 }
