@@ -105,17 +105,16 @@
             color: #aaa;
         }
 
-        .copyright {
-            font-size: 0.8em;
-            color: white;
+        .disclaimer {
+            display: flex;
+            justify-content: center;
+            font-size: 0.7em; /* Adjusted for smaller size */
+            color: #666;
             margin-top: 10px;
         }
 
-        .disclaimer {
-            font-size: 0.8em;
-            color: #666;
-            text-align: center;
-            margin-top: 10px;
+        .copyright {
+            margin-right: 10px; /* Space between copyright and disclaimer */
         }
     </style>
 </head>
@@ -165,8 +164,8 @@
     </div>
 
     <div class="disclaimer">
-      <p class="copyright">&copy; 2000 Mothers For Sale. All rights reserved.</p>
-        Disclaimer: Must be emotionally prepared to love and be loved.
+        <p class="copyright">&copy; 2000 Mothers For Sale. All rights reserved.</p>
+        <span>Disclaimer: Must be emotionally prepared to love and be loved.</span>
     </div>
 
     <script>
