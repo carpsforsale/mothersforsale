@@ -10,15 +10,14 @@ body {
 .left-container {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
-    width: 200px; /* Fixed width for the left section */
-    height: 400px; /* Set the height to 400px */
+    max-width: 200px; /* Max width for the left section */
+    width: 100%; /* Allow it to shrink to fit */
     box-sizing: border-box; /* Include padding in width calculation */
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
 
 .signup-section {
     position: relative; /* Set position for absolute children */
-    height: 144px; /* Original height of your image */
+    height: 144px; /* Set to the original height of your image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
 }
@@ -55,7 +54,6 @@ body {
 .login-section {
     background-color: #ffffff; /* White background for login section */
     padding: 10px; /* Reduced padding for fitting */
-    height: 100%; /* Allow login section to fill remaining space */
 }
 
 .welcome-text,
@@ -85,6 +83,8 @@ body {
 }
 
 .login-input {
+    width: 100%; /* Full width to fit container */
+    max-width: 120px; /* Set a max width for the inputs */
     width: 104.868px; /* Set fixed width */
     height: 15.385px; /* Set fixed height */
     padding: 3px; /* Light padding for input fields */
