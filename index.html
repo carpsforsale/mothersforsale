@@ -82,6 +82,7 @@
             display: flex;
             flex-direction: column; /* Stack buttons vertically */
             gap: 10px; /* Space between buttons */
+            align-items: center; /* Center align items */
         }
 
         .signup-button {
@@ -93,12 +94,21 @@
             font-weight: bold; /* Bold text */
             border-radius: 25px; /* Rounded for oval shape */
             width: 160px; /* Set a width for a squeezed oval appearance */
+            text-align: center; /* Center text */
             transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
         }
 
         .signup-button:hover {
             background-color: #cc3333;
             transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .welcome-text,
+        .free-text {
+            margin: 5px 0; /* Space between text and buttons */
+            font-size: 1.1em; /* Slightly larger for visibility */
+            font-weight: bold; /* Bold text */
+            color: #333; /* Darker color for better contrast */
         }
 
         footer {
@@ -129,10 +139,12 @@
 
     <div class="container">
         <div class="section left">
+            <div class="welcome-text">WELCOME!</div>
             <div class="signup-buttons">
                 <a href="#" class="signup-button">Sign Up as a Son</a>
                 <a href="#" class="signup-button">Sign Up as a Mother</a>
             </div>
+            <div class="free-text">IT'S FREE!</div>
         </div>
         <div class="section middle"></div>
         <div class="section right"></div>
