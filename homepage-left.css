@@ -72,7 +72,7 @@ body {
 
 .login-row {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end; /* Align inputs to the right */
     align-items: center;
     margin-bottom: 5px; /* Space below each row */
 }
@@ -84,6 +84,7 @@ body {
 
 .login-input {
     width: 100%; /* Full width to fit container */
+    max-width: 120px; /* Set a max width for the inputs */
     padding: 3px; /* Light padding for input fields */
     border: 1px solid #ccc; /* Light border */
     border-radius: 3px; /* Smaller rounded corners */
