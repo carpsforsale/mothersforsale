@@ -1,10 +1,24 @@
 .profile-buttons {
     display: flex;
     justify-content: center; /* Center the images */
-    gap: 10px; /* Space between images */
+    gap: 5px; /* Space between images */
 }
 
 .profile-img {
     width: 57px;
     height: 57px;
+}
+
+.centered-header {
+    text-align: center; /* Center the header text */
+}
+
+.centered-text {
+    text-align: center; /* Center the additional text */
+    font-size: smaller; /* Shrink the font size */
+}
+
+.testimonial-img {
+    width: 80px; /* Adjust to make it slightly smaller */
+    height: auto; /* Maintain aspect ratio */
 }
