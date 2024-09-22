@@ -17,7 +17,7 @@ body {
 
 .signup-section {
     background-color: #f9f9f9; /* Lighter background for the signup section */
-    padding: 10px; /* Reduced padding for fitting */
+    padding: 0; /* No padding since we have the image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
 }
@@ -27,29 +27,18 @@ body {
     padding: 10px; /* Reduced padding for fitting */
 }
 
-.signup-buttons {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 5px; /* Space between buttons */
-    align-items: center; /* Center align items */
+.signup-link {
+    display: block;
+    height: 100px; /* Adjust based on the image height */
+    width: 100%;
+    position: relative;
 }
 
 .signup-button {
-    padding: 8px 16px; /* Adjusted padding for a more compact shape */
-    background-color: #ff6666;
-    color: white;
-    text-decoration: none;
-    font-size: 0.8em; /* Smaller font size */
-    font-weight: bold; /* Bold text */
-    border-radius: 50px 30px; /* More pointed ends */
-    width: 100%; /* Full width to fit container */
-    text-align: center; /* Center text */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-}
-
-.signup-button:hover {
-    background-color: #cc3333;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    display: block; /* Ensure the link takes full space */
+    height: 50%; /* Each link occupies half of the image */
+    width: 100%;
+    text-decoration: none; /* Remove underline */
 }
 
 .welcome-text,
