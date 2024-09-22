@@ -16,22 +16,11 @@ body {
 }
 
 .signup-section {
-    background-color: #f9f9f9; /* Lighter background for the signup section */
-    padding: 0; /* No padding since we have the image */
+    position: relative; /* Set position for absolute children */
+    height: 100px; /* Set the height based on your image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
-}
-
-.login-section {
-    background-color: #ffffff; /* White background for login section */
-    padding: 10px; /* Reduced padding for fitting */
-}
-
-.signup-link {
-    display: block;
-    height: 100%; /* Adjust based on the image height */
-    width: 100%;
-    position: relative;
+    overflow: hidden; /* Hide any overflow */
 }
 
 .signup-button {
@@ -39,6 +28,23 @@ body {
     height: 50%; /* Each link occupies half of the image */
     width: 100%;
     text-decoration: none; /* Remove underline */
+}
+
+.top-button {
+    background-image: url('signupbuttons.png');
+    background-position: top; /* Position for the top half */
+    background-size: 100% 200%; /* Scale image to fit */
+}
+
+.bottom-button {
+    background-image: url('signupbuttons.png');
+    background-position: bottom; /* Position for the bottom half */
+    background-size: 100% 200%; /* Scale image to fit */
+}
+
+.login-section {
+    background-color: #ffffff; /* White background for login section */
+    padding: 10px; /* Reduced padding for fitting */
 }
 
 .welcome-text,
