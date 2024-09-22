@@ -17,6 +17,30 @@
             color: white;
             text-align: center;
             padding: 20px;
+            border-radius: 0 0 20px 20px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 50px; /* Adjust as needed */
+        }
+
+        .nav {
+            margin-top: 10px;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -79,8 +103,16 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Mothers For Sale Logo" class="logo">
         <h1>Mothers For Sale</h1>
         <h2>Connecting Mothers with Sons for a Lifetime of Care</h2>
+        <nav class="nav">
+            <a href="#">Browse</a>
+            <a href="#">Help Desk</a>
+            <a href="#">Terms</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Join</a>
+        </nav>
     </header>
 
     <div class="container">
