@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=200">
     <title>Mothers For Sale - Left Section</title>
     <link rel="stylesheet" href="homepage-left.css">
+    <style>
+        .signup-image {
+            width: 100%; /* Make the image responsive */
+            cursor: pointer; /* Change cursor to pointer for clickable areas */
+        }
+        .signup-link {
+            display: block;
+            height: 50%; /* Adjust based on the image height */
+            width: 100%;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
 
     <div class="left-container">
         <!-- Sign-Up Section -->
         <div class="signup-section">
-            <div class="welcome-text">WELCOME!</div>
-            <div class="signup-buttons">
-                <a href="#" class="signup-button">Sign Up as a Son</a>
-                <a href="#" class="signup-button">Sign Up as a Mother</a>
+            <div class="signup-link">
+                <a href="#" class="signup-button" style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%;"> <!-- Top half link -->
+                    <img src="signupbuttons.png" alt="Sign Up Buttons" class="signup-image">
+                </a>
+                <a href="#" class="signup-button" style="position: absolute; top: 50%; left: 0; right: 0; bottom: 0;"> <!-- Bottom half link -->
+                    <img src="signupbuttons.png" alt="Sign Up Buttons" class="signup-image">
+                </a>
             </div>
-            <div class="free-text">IT'S FREE!</div>
         </div>
 
         <!-- Log-In Section -->
