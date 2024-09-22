@@ -64,7 +64,7 @@
         }
 
         .middle {
-            width: 400px; /* Set middle section to 400px */
+            width: 400px;
         }
 
         .right {
@@ -79,6 +79,13 @@
             margin: 0 auto;
             position: relative;
             padding: 0;
+        }
+
+        .new-members {
+            text-align: center;
+            font-size: 0.9em;
+            margin: 10px 0;
+            color: #555;
         }
 
         .disclaimer {
@@ -124,8 +131,19 @@
     <footer>
         <p>&copy; 2000 Mothers For Sale. All rights reserved.</p>
     </footer>
+
+    <div class="new-members">
+        New Members this week: <span id="newMembersCount"></span>
+    </div>
+
     <div class="disclaimer">
         Disclaimer: Must be emotionally prepared to love and be loved.
     </div>
+
+    <script>
+        // Generate a random number between 100 and 150
+        const newMembersCount = Math.floor(Math.random() * 51) + 100;
+        document.getElementById('newMembersCount').textContent = newMembersCount;
+    </script>
 </body>
 </html>
