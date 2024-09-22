@@ -12,6 +12,16 @@
             padding: 0;
         }
 
+        .logo-container {
+            background-color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            height: 80px; /* Adjusted for a larger logo */
+        }
+
         header {
             background-color: #ff9999;
             color: white;
@@ -19,13 +29,6 @@
             padding: 20px;
             border-radius: 0 0 20px 20px;
             position: relative;
-        }
-
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            height: 50px; /* Adjust as needed */
         }
 
         .nav {
@@ -47,15 +50,6 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        h1 {
-            margin-bottom: 0;
-        }
-
-        h2 {
-            margin: 10px 0 20px;
-            color: #333;
         }
 
         .intro {
@@ -102,10 +96,11 @@
     </style>
 </head>
 <body>
-    <header>
+    <div class="logo-container">
         <img src="logo.png" alt="Mothers For Sale Logo" class="logo">
-        <h1>Mothers For Sale</h1>
-        <h2>Connecting Mothers with Sons for a Lifetime of Care</h2>
+    </div>
+
+    <header>
         <nav class="nav">
             <a href="#">Browse</a>
             <a href="#">Help Desk</a>
