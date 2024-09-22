@@ -19,6 +19,8 @@
 }
 
 .testimonial-img {
-    width: 80px; /* Adjust to make it slightly smaller */
+    width: 160px; /* Double the previous size from 80px to 160px */
     height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
 }
