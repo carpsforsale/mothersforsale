@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=200">
     <title>Mothers For Sale - Left Section</title>
     <link rel="stylesheet" href="homepage-left.css">
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'loginpage.html';
+        }
+    </script>
 </head>
 <body>
 
@@ -27,7 +32,7 @@
                 <input type="password" id="password" class="login-input">
             </div>
             <div class="login-button-container">
-                <a href="loginpage.html" class="login-button">Log In</a>
+                <button class="login-button" onclick="redirectToLogin()">Log In</button>
             </div>
         </div>
     </div>
