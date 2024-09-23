@@ -20,13 +20,7 @@ body {
     height: 144px; /* Set to the original height of your image */
     margin-bottom: 10px; /* Space between signup and login sections */
     text-align: center; /* Center text within the section */
-}
-
-.signup-link {
-    display: block;
-    height: 100%; /* Full height of the signup section */
-    width: 100%;
-    position: relative;
+    overflow: hidden; /* Ensure no overflow from child elements */
 }
 
 .signup-button {
@@ -37,17 +31,17 @@ body {
     position: absolute; /* Position for the top and bottom halves */
 }
 
-.signup-button.top {
+.signup-button.top-button {
     background-image: url('signupbuttons.png');
     background-position: top; /* Position for the top half */
-    background-size: 100% auto; /* Scale width to fit, maintain aspect ratio */
+    background-size: cover; /* Scale to cover the section */
     top: 0; /* Position at the top */
 }
 
-.signup-button.bottom {
+.signup-button.bottom-button {
     background-image: url('signupbuttons.png');
     background-position: bottom; /* Position for the bottom half */
-    background-size: 100% auto; /* Scale width to fit, maintain aspect ratio */
+    background-size: cover; /* Scale to cover the section */
     bottom: 0; /* Position at the bottom */
 }
 
@@ -85,7 +79,6 @@ body {
 .login-input {
     width: 100%; /* Full width to fit container */
     max-width: 120px; /* Set a max width for the inputs */
-    width: 104.868px; /* Set fixed width */
     height: 15.385px; /* Set fixed height */
     padding: 3px; /* Light padding for input fields */
     border: 1px solid #ccc; /* Light border */
@@ -107,7 +100,6 @@ body {
     text-align: center; /* Center text inside the button */
     cursor: pointer;
     font-size: 0.8em; /* Smaller font size */
-    width: auto; /* Button width is based on text content */
 }
 
 .login-button:hover {
