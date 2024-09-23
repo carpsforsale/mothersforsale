@@ -86,6 +86,11 @@
         button:hover {
             background-color: #45a049;
         }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -96,7 +101,7 @@
     </div>
 
     <!-- Include header -->
-    <?php include 'header.html'; ?>
+    <iframe src="header.html" height="100"></iframe>
 
     <div class="form-container">
         <form action="loginpage.html" method="POST">
@@ -154,6 +159,6 @@
     </div>
 
     <!-- Include footer -->
-    <?php include 'footer.html'; ?>
+    <iframe src="footer.html" height="100"></iframe>
 </body>
 </html>
