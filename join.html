@@ -6,6 +6,139 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Join Us</title>
     <link rel="stylesheet" href="join.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Logo Container */
+        .logo-container {
+            background-color: white;
+            text-align: left;
+            padding: 20px 20px;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #ff9999;
+            color: white;
+            padding: 5px 0;
+            border-radius: 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 15px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff6666;
+            color: white;
+            text-align: center;
+            width: 800px;
+            padding: 10px 0;
+            margin: 0;
+            border-radius: 20px;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            padding: 5px 0;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 15px;
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Basic retro feel table styling */
+        table {
+            width: 500px; /* Set table width to 500px */
+            border: 1px solid black;
+            border-spacing: 10px;
+            background-color: #eaeaea;
+            margin: 20px auto; /* Center the table */
+        }
+
+        th {
+            background-color: #000000;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .terms-box {
+            width: 100%;
+            height: 100px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .small-text {
+            font-size: 12px;
+        }
+
+        .checkbox-label {
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="logo-container">
@@ -27,50 +160,50 @@
     <div class="form-container">
         <form action="loginpage.html" method="POST">
             <table>
-                <tr class="form-header">
+                <tr>
                     <th colspan="2">Create Your Account</th>
                 </tr>
-                <tr class="form-row">
-                    <td class="label-cell"><label for="username">Username:</label></td>
-                    <td class="input-cell"><input type="text" id="username" name="username" required></td>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
                 </tr>
-                <tr class="form-row">
-                    <td class="label-cell"><label for="password">Password:</label></td>
-                    <td class="input-cell"><input type="password" id="password" name="password" required></td>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
                 </tr>
-                <tr class="form-row">
-                    <td class="label-cell"><label for="email">Email:</label></td>
-                    <td class="input-cell"><input type="email" id="email" name="email" required></td>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
                 </tr>
-                <tr class="form-row">
-                    <td class="label-cell">Are you a:</td>
-                    <td class="input-cell">
+                <tr>
+                    <td>Are you a:</td>
+                    <td>
                         <input type="radio" id="mother" name="role" value="mother" required>
                         <label for="mother">Mother</label>
                         <input type="radio" id="son" name="role" value="son" required>
                         <label for="son">Son</label>
                     </td>
                 </tr>
-                <tr class="form-row">
-                    <td class="label-cell"><label for="terms">Terms of Use:</label></td>
-                    <td class="input-cell">
+                <tr>
+                    <td><label for="terms">Terms of Use:</label></td>
+                    <td>
                         <div class="terms-box">
                             <p>This service is for adults only. You must be at least 18 years old to register...</p>
                         </div>
                     </td>
                 </tr>
-                <tr class="form-row small-text">
-                    <td colspan="2">
+                <tr>
+                    <td colspan="2" class="small-text">
                         By continuing, you acknowledge and accept <a href="terms.html">MothersForSale.com Terms of Use</a>.
                     </td>
                 </tr>
-                <tr class="form-row">
+                <tr>
                     <td colspan="2">
                         <input type="checkbox" id="updates" name="updates">
                         <label for="updates" class="checkbox-label">Yes, send me valuable MothersForSale.com updates and information via email.</label>
                     </td>
                 </tr>
-                <tr class="form-row">
+                <tr>
                     <td colspan="2">
                         <button type="submit">Submit >></button>
                     </td>
