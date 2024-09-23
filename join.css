@@ -2,7 +2,7 @@
 table {
     width: 500px; /* Set table width to 500px */
     border: 1px solid black;
-    border-spacing: 10px;
+    border-spacing: 0; /* Remove spacing between table cells */
     background-color: #eaeaea;
     margin: 0 auto; /* Center the table */
 }
@@ -13,16 +13,27 @@ th {
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-align: left;
-    padding: 10px;
+    padding: 5px; /* Reduced padding for a tighter layout */
 }
 
 td {
-    padding: 10px;
+    padding: 5px; /* Reduced padding for tighter layout */
     font-family: Arial, sans-serif;
     font-size: 14px;
+    background-color: #e0e0e0; /* Light gray background for sections */
 }
 
-input[type="text"], input[type="email"], input[type="password"], select {
+tr:nth-child(even) td {
+    background-color: #d3d3d3; /* Slightly darker gray for alternating rows */
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 170px; /* Set form fields to 170px wide */
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+select {
     width: 100%;
     padding: 5px;
     font-family: Arial, sans-serif;
@@ -33,7 +44,7 @@ input[type="text"], input[type="email"], input[type="password"], select {
     height: 100px;
     overflow-y: scroll;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px; /* Reduced padding */
     background-color: white;
 }
 
