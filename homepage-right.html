@@ -10,6 +10,22 @@
             width: 200px; /* Fixed width */
             height: 400px; /* Fixed height */
             box-sizing: border-box; /* Include padding in width and height calculations */
+            overflow: hidden; /* Prevent overflow and scrollbars */
+        }
+        .featured-profiles, .testimonials {
+            height: 50%; /* Adjusted for space */
+            display: flex;
+            flex-direction: column; /* Stack sections vertically */
+            justify-content: center; /* Center content */
+            align-items: center; /* Center content */
+        }
+        .profile-buttons {
+            display: flex; /* Align profile images in a row */
+        }
+        .profile-img {
+            width: 57px; /* Adjusted size for profile images */
+            height: 57px; /* Maintain aspect ratio */
+            margin: 0 5px; /* Spacing between images */
         }
     </style>
 </head>
