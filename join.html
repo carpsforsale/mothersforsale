@@ -25,35 +25,58 @@
     </header>
 
     <div class="form-container">
-        <h1>Join Mothers For Sale</h1>
-        <p>Welcome! Please fill out the form below to join our community.</p>
-        <form action="submit-join.php" method="POST">
-            <div>
-                <label for="name"><strong>Name:</strong></label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div>
-                <label for="email"><strong>Email:</strong></label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div>
-                <label for="role"><strong>Are you a Mother or Son?</strong></label>
-                <select id="role" name="role" required>
-                    <option value="mother">Mother</option>
-                    <option value="son">Son</option>
-                </select>
-            </div>
-            
-            <button type="submit">Join</button>
+        <form action="loginpage.html" method="POST">
+            <table>
+                <tr>
+                    <th colspan="2">Create Your Account</th>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Are you a:</td>
+                    <td>
+                        <input type="radio" id="mother" name="role" value="mother" required>
+                        <label for="mother">Mother</label>
+                        <input type="radio" id="son" name="role" value="son" required>
+                        <label for="son">Son</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="terms">Terms of Use:</label></td>
+                    <td>
+                        <div class="terms-box">
+                            <p>This service is for adults only. You must be at least 18 years old to register. You agree to be solely responsible for the contents of your transmissions to or through the Service and for your interactions with other members. You agree not to transmit any unlawful, harassing, libelous, or otherwise objectionable material. By continuing, you acknowledge and accept our Terms of Use.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="small-text">
+                        By continuing, you acknowledge and accept <a href="terms.html">MothersForSale.com Terms of Use</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="updates" name="updates">
+                        <label for="updates" class="checkbox-label">Yes, send me valuable MothersForSale.com updates and information via email.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Submit >></button>
+                    </td>
+                </tr>
+            </table>
         </form>
-        <div class="terms">
-            <p><strong>Terms of Use:</strong><br>
-            This service is for adults only. You must be at least 18 years old to register. You agree to be solely responsible for the contents of your transmissions to or through the Service and for your interactions with other members. You agree not to transmit any unlawful, harassing, libelous, or otherwise objectionable material. By continuing, you acknowledge and accept our Terms of Use.</p>
-            <input type="checkbox" id="updates" name="updates">
-            <label for="updates">Yes, send me valuable updates via email.</label>
-        </div>
     </div>
 
     <footer>
