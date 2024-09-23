@@ -16,66 +16,6 @@
             margin: 0 auto;
         }
 
-        .logo-container {
-            background-color: white;
-            text-align: left;
-            padding: 20px 20px;
-        }
-
-        .logo {
-            height: 80px;
-        }
-
-        header {
-            background-color: #ff9999;
-            color: white;
-            padding: 5px 0;
-            border-radius: 20px;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #ff6666;
-            color: white;
-            text-align: center;
-            width: 800px;
-            padding: 10px 0;
-            margin: 0;
-            border-radius: 20px;
-        }
-
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            padding: 5px 0;
-        }
-
-        .footer-nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-        .footer-nav a:hover {
-            text-decoration: underline;
-        }
-
         .about-container {
             padding: 20px;
         }
@@ -86,20 +26,9 @@
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="logo.png" alt="Mothers For Sale Logo" class="logo">
-        </a>
-    </div>
-
     <header>
-        <nav class="nav">
-            <a href="browse.html">Browse</a>
-            <a href="helpdesk.html">Help Desk</a>
-            <a href="events.html">Events</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="join.html">Join</a>
-        </nav>
+        <!-- Include the header -->
+        <div id="header-placeholder"></div>
     </header>
 
     <div class="about-container">
@@ -112,12 +41,14 @@
     </div>
 
     <footer>
-        <div class="footer-nav">
-            <a href="FAQ.html">FAQ</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
-        </div>
+        <!-- Include the footer -->
+        <div id="footer-placeholder"></div>
     </footer>
+
+    <script>
+        // Load the header and footer HTML
+        document.getElementById('header-placeholder').innerHTML = fetch('header.html').then(response => response.text());
+        document.getElementById('footer-placeholder').innerHTML = fetch('footer.html').then(response => response.text());
+    </script>
 </body>
 </html>
