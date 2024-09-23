@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=200, initial-scale=1.0">
     <link rel="stylesheet" href="homepage-right.css">
     <title>Homepage Right</title>
+    <style>
+        .section.right {
+            width: 200px; /* Fixed width */
+            height: 400px; /* Fixed height */
+            box-sizing: border-box; /* Include padding in width and height calculations */
+        }
+    </style>
 </head>
 <body>
     <div class="section right">
@@ -21,7 +28,7 @@
             <p class="centered-text">click pictures above to view these profiles</p>
         </div>
         <div class="testimonials">
-            <img src="homepagetestimonial.png" alt="Testimonial Photo" class="testimonial-img">
+            <img src="homepagetestimonial.png" alt="Testimonial Photo" class="testimonial-img" style="max-width: 100%; height: auto;">
         </div>
     </div>
 </body>
