@@ -12,6 +12,8 @@
 .centered-header {
     text-align: center; /* Center the header text */
     margin: 0; /* Remove default margin */
+    font-family: 'Arial Black', Arial, sans-serif; /* Use Arial Black as the font */
+    font-weight: bold; /* Make the text bold */
 }
 
 .centered-text {
