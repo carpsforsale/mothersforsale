@@ -75,19 +75,21 @@
         button:hover {
             background-color: #45a049;
         }
-
-        iframe {
-            width: 100%;
-            border: none;
-            height: auto; /* Adjusts automatically based on content */
-            display: block; /* Prevents whitespace below the iframe */
-        }
     </style>
+    <script>
+        // Function to load HTML content
+        function loadHTML(elementId, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
+        }
+    </script>
 </head>
-<body>
+<body onload="loadHTML('header', 'header.html'); loadHTML('footer', 'footer.html');">
 
-    <!-- Include header -->
-    <iframe src="header.html" style="height: 100px;"></iframe>
+    <div id="header"></div>
 
     <div class="form-container">
         <form action="loginpage.html" method="POST">
@@ -144,7 +146,6 @@
         </form>
     </div>
 
-    <!-- Include footer -->
-    <iframe src="footer.html" style="height: 100px;"></iframe>
+    <div id="footer"></div>
 </body>
 </html>
