@@ -27,58 +27,6 @@
             height: 80px;
         }
 
-        /* Header and Navigation */
-        header {
-            background-color: #ff9999;
-            color: white;
-            padding: 5px 0;
-            border-radius: 20px;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #ff6666;
-            color: white;
-            text-align: center;
-            width: 800px;
-            padding: 10px 0;
-            margin: 0;
-            border-radius: 20px;
-        }
-
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            padding: 5px 0;
-        }
-
-        .footer-nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-        .footer-nav a:hover {
-            text-decoration: underline;
-        }
-
         /* Basic retro feel table styling */
         table {
             width: 500px; /* Set table width to 500px */
@@ -147,15 +95,8 @@
         </a>
     </div>
 
-    <header>
-        <nav class="nav">
-            <a href="browse.html">Browse</a>
-            <a href="helpdesk.html">Help Desk</a>
-            <a href="events.html">Events</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="join.html">Join</a>
-        </nav>
-    </header>
+    <!-- Include header -->
+    <?php include 'header.html'; ?>
 
     <div class="form-container">
         <form action="loginpage.html" method="POST">
@@ -212,13 +153,7 @@
         </form>
     </div>
 
-    <footer>
-        <div class="footer-nav">
-            <a href="FAQ.html">FAQ</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
-        </div>
-    </footer>
+    <!-- Include footer -->
+    <?php include 'footer.html'; ?>
 </body>
 </html>
