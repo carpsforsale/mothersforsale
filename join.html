@@ -6,80 +6,6 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Join Us</title>
     <link rel="stylesheet" href="join.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            width: 800px;
-            margin: 0 auto;
-        }
-
-        .logo-container {
-            background-color: white;
-            text-align: left;
-            padding: 20px 20px;
-        }
-
-        .logo {
-            height: 80px;
-        }
-
-        header {
-            background-color: #ff9999;
-            color: white;
-            padding: 5px 0;
-            border-radius: 20px;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #ff6666;
-            color: white;
-            text-align: center;
-            width: 800px;
-            padding: 10px 0;
-            margin: 0;
-            border-radius: 20px;
-        }
-
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            padding: 5px 0;
-        }
-
-        .footer-nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-        .footer-nav a:hover {
-            text-decoration: underline;
-        }
-
-        .form-container {
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
     <div class="logo-container">
@@ -103,17 +29,17 @@
         <p>Welcome! Please fill out the form below to join our community.</p>
         <form action="submit-join.php" method="POST">
             <div>
-                <label for="name">Name:</label>
+                <label for="name"><strong>Name:</strong></label>
                 <input type="text" id="name" name="name" required>
             </div>
             
             <div>
-                <label for="email">Email:</label>
+                <label for="email"><strong>Email:</strong></label>
                 <input type="email" id="email" name="email" required>
             </div>
             
             <div>
-                <label for="role">Are you a Mother or Son?</label>
+                <label for="role"><strong>Are you a Mother or Son?</strong></label>
                 <select id="role" name="role" required>
                     <option value="mother">Mother</option>
                     <option value="son">Son</option>
@@ -122,6 +48,12 @@
             
             <button type="submit">Join</button>
         </form>
+        <div class="terms">
+            <p><strong>Terms of Use:</strong><br>
+            This service is for adults only. You must be at least 18 years old to register. You agree to be solely responsible for the contents of your transmissions to or through the Service and for your interactions with other members. You agree not to transmit any unlawful, harassing, libelous, or otherwise objectionable material. By continuing, you acknowledge and accept our Terms of Use.</p>
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">Yes, send me valuable updates via email.</label>
+        </div>
     </div>
 
     <footer>
