@@ -1,9 +1,10 @@
 /* Basic retro feel table styling */
 table {
-    width: 100%;
+    width: 500px; /* Set table width to 500px */
     border: 1px solid black;
     border-spacing: 10px;
     background-color: #eaeaea;
+    margin: 0 auto; /* Center the table */
 }
 
 th {
