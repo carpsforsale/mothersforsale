@@ -16,17 +16,6 @@
             margin: 0 auto;
         }
 
-        /* Logo Container */
-        .logo-container {
-            background-color: white;
-            text-align: left;
-            padding: 20px 20px;
-        }
-
-        .logo {
-            height: 80px;
-        }
-
         /* Basic retro feel table styling */
         table {
             width: 500px; /* Set table width to 500px */
@@ -60,7 +49,7 @@
         .terms-box {
             width: 100%;
             height: 100px;
-            overflow-y: scroll;
+            overflow-y: auto;
             border: 1px solid #ccc;
             padding: 10px;
             background-color: white;
@@ -90,18 +79,15 @@
         iframe {
             width: 100%;
             border: none;
+            height: auto; /* Adjusts automatically based on content */
+            display: block; /* Prevents whitespace below the iframe */
         }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="logo.png" alt="Mothers For Sale Logo" class="logo">
-        </a>
-    </div>
 
     <!-- Include header -->
-    <iframe src="header.html" height="100"></iframe>
+    <iframe src="header.html" style="height: 100px;"></iframe>
 
     <div class="form-container">
         <form action="loginpage.html" method="POST">
@@ -159,6 +145,6 @@
     </div>
 
     <!-- Include footer -->
-    <iframe src="footer.html" height="100"></iframe>
+    <iframe src="footer.html" style="height: 100px;"></iframe>
 </body>
 </html>
