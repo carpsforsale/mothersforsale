@@ -8,6 +8,11 @@
     <style>
         /* Add any necessary styles here */
     </style>
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'loginpage.html';
+        }
+    </script>
 </head>
 <body>
 
@@ -30,9 +35,7 @@
                 <input type="password" id="password" class="login-input">
             </div>
             <div class="login-button-container">
-                <a href="loginpage.html">
-                    <button class="login-button">Log In</button>
-                </a>
+                <button class="login-button" onclick="redirectToLogin()">Log In</button>
             </div>
         </div>
     </div>
