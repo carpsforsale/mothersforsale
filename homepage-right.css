@@ -11,6 +11,7 @@
 
 .centered-header {
     text-align: center; /* Center the header text */
+    margin: 0; /* Remove default margin */
 }
 
 .centered-text {
