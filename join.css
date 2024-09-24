@@ -1,10 +1,19 @@
-/* Basic retro feel table styling */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    margin: 0 auto;
+}
+
 table {
     width: 500px; /* Set table width to 500px */
     border: 1px solid black;
-    border-spacing: 0; /* Remove spacing between table cells */
+    border-spacing: 0px; /* Original value, can change to 0 if desired */
     background-color: #eaeaea;
-    margin: 0 auto; /* Center the table */
+    margin: 20px auto; /* Center the table */
 }
 
 th {
@@ -13,38 +22,27 @@ th {
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-align: left;
-    padding: 5px; /* Reduced padding for a tighter layout */
+    padding: 0px;
 }
 
 td {
-    padding: 5px; /* Reduced padding for tighter layout */
+    padding: 0px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    background-color: #e0e0e0; /* Light gray background for sections */
 }
 
-tr:nth-child(even) td {
-    background-color: #d3d3d3; /* Slightly darker gray for alternating rows */
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
-    width: 170px; /* Set form fields to 170px wide */
-    padding: 5px;
-    font-family: Arial, sans-serif;
-}
-
-select {
+input[type="text"], input[type="email"], input[type="password"], select {
     width: 100%;
-    padding: 5px;
+    padding: 0px;
     font-family: Arial, sans-serif;
 }
 
 .terms-box {
     width: 100%;
     height: 100px;
-    overflow-y: scroll;
+    overflow-y: auto;
     border: 1px solid #ccc;
-    padding: 5px; /* Reduced padding */
+    padding: 0px;
     background-color: white;
 }
 
@@ -67,22 +65,4 @@ button {
 
 button:hover {
     background-color: #45a049;
-}
-
-/* Additional optional styles */
-.nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.footer-nav {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.footer-nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
 }
