@@ -38,7 +38,7 @@ input[type="text"], input[type="email"], input[type="password"], select {
 }
 
 .terms-box {
-    width: 100%;
+    width: 80%;
     height: 100px;
     overflow-y: auto;
     border: 1px solid #ccc;
