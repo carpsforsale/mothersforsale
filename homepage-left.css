@@ -56,12 +56,25 @@ body {
     font-size: 1em; /* Adjusted size for visibility */
     font-weight: bold; /* Bold text */
     color: #333; /* Darker color for better contrast */
+    
+    /* Blurry and sharp effect */
+    filter: blur(1px);
+    text-shadow: 
+        1px 1px 0px rgba(0, 0, 0, 0.4), /* Darker shadow */
+        -1px -1px 0px rgba(255, 255, 255, 0.6); /* Lighter sharp overlay */
 }
 
 .login-text {
     margin: 5px 0; /* Space above and below the login text */
     font-weight: normal; /* Unbolded */
     font-size: 0.8em; /* Smaller size */
+    color: #333;
+
+    /* Blurry and sharp effect */
+    filter: blur(1px);
+    text-shadow: 
+        1px 1px 0px rgba(0, 0, 0, 0.4),
+        -1px -1px 0px rgba(255, 255, 255, 0.6);
 }
 
 .login-row {
