@@ -9,7 +9,8 @@ body {
 }
 
 table {
-    width: 500px; /* Set table width to 500px */
+    width: 100%; /* Set table width to 100% to fit within the container */
+    max-width: 500px; /* Set max-width to maintain your design */
     border: 1px solid black;
     border-spacing: 0; /* No spacing between table cells */
     margin: 20px auto; /* Center the table */
