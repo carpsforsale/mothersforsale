@@ -126,5 +126,4 @@ button:hover {
     width: 25%; /* Set width to 25% of container (half of the current 50%) */
     max-width: 100px; /* Ensure image doesn't exceed 200px width */
     height: auto; /* Maintain aspect ratio */
-    margin: 0 0 20px 0;
 }
