@@ -105,3 +105,11 @@ body {
 .login-button:hover {
     background-color: #eee; /* Light gray hover effect */
 }
+
+/* disabling font smoothing */
+body, p, h1, h2, h3, h4, h5, h6, a, span, div {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: none;
+  font-family: Arial, sans-serif;
+}
