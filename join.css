@@ -90,7 +90,7 @@ tr:nth-child(7) { /* Set every third row (odd) to white */
     text-align: center; /* Center the text within the terms box */
     margin: 0 auto; /* Center the terms box in the cell */
     color: #000; /* Set the text color */
-    font-family: 'Courier New', Courier, monospace; /* Change font to Courier */
+    font-family: 'Courier New', Courier, monospace !important; /* Force font to Courier */
 }
 
 /* Shrink font size for small text */
@@ -127,14 +127,21 @@ button:hover {
 
 /* Styles for the 'createyouraccount.png' image */
 .create-account-img {
-    width: 50%; /* Set width to 25% of container (half of the current 50%) */
+    width: 25%; /* Set width to 25% of container */
     max-width: 200px; /* Ensure image doesn't exceed 200px width */
     height: auto; /* Maintain aspect ratio */
 }
 
 body, p, h1, h2, h3, h4, h5, h6, a, span, div {
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: none;
-  font-family: Arial, sans-serif;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Additional Styles for Container */
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
 }
