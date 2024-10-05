@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="styles.css">
     <title>Homepage Middle</title>
     <style>
+        /* Disabling font smoothing */
+        body, p, h1, h2, h3, h4, h5, h6, a, span, div {
+            -webkit-font-smoothing: none; /* Disable font smoothing in WebKit browsers (Chrome, Safari) */
+            -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+            font-smoothing: none; /* Generic property (not widely supported but included for fallback) */
+            font-family: Arial, sans-serif; /* Use older web-safe fonts for an authentic look */
+        }
+
         .section.middle {
             display: flex;
             flex-direction: column;
@@ -25,7 +33,7 @@
             height: auto;
         }
         p {
-            font-family: arial, sans-serif;
+            font-family: Arial, sans-serif; /* Ensure consistent font family */
             font-size: 12px;
             color: #333333;
             text-align: center;
