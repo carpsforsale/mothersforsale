@@ -41,7 +41,7 @@
         .nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold; /* Adjust this to unbold if needed */
+            font-weight: bold;
             padding: 0 15px;
         }
 
@@ -67,7 +67,7 @@
         .footer-nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold; /* Adjust this to unbold if needed */
+            font-weight: bold;
             padding: 0 15px;
         }
 
@@ -85,13 +85,22 @@
         .disclaimer {
             display: flex;
             justify-content: center;
-            font-size: 0.7em; /* Adjusted for smaller size */
+            font-size: 0.7em;
             color: #666;
             margin-top: 10px;
         }
 
         .copyright {
-            margin-right: 10px; /* Space between copyright and disclaimer */
+            margin-right: 10px;
+        }
+
+        /* Styles for the 'createyouraccount.png' image */
+        .create-account-img {
+            display: block;
+            margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+            width: 100%; /* Set width to 100% of container */
+            max-width: 400px; /* Ensure image doesn't exceed 400px width */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -112,6 +121,10 @@
             <a href="join.html">Join</a>
         </nav>
     </header>
+
+    <hr>
+    <img src="createyouraccount.png" alt="Create Your Account" class="create-account-img">
+    <hr>
 
     <div class="form-container">
         <form action="loginpage.html" method="POST">
