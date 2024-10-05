@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Keep body font as Arial */
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -96,7 +96,12 @@ tr:last-child {
     text-align: center; /* Center the text within the terms box */
     margin: 0 auto; /* Center the terms box in the cell */
     color: #000; /* Set the text color */
-    font-family: 'Courier New', Courier, monospace !important; /* Force font to Courier */
+    font-family: 'Courier New', Courier, monospace; /* Force font to Courier */
+}
+
+/* Ensure all text within the terms box uses the Courier font */
+.terms-box * {
+    font-family: 'Courier New', Courier, monospace !important; /* Force font to Courier for all children */
 }
 
 /* Shrink font size for small text */
