@@ -18,7 +18,7 @@ table {
 }
 
 th {
-    background-color: #000000;
+    background-color: #8B0000; /* Change this to a darkish red color */
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -79,6 +79,12 @@ tr:nth-child(7) { /* Set every third row (odd) to white */
     background-color: #ffffff; 
 }
 
+/* Set the submitting row background color to match the header */
+tr:last-child {
+    background-color: #8B0000; /* Set background color to match header */
+    color: white; /* Set text color to white for better contrast */
+}
+
 /* Additional Styles */
 .terms-box {
     width: 330.14px; /* Set to specified width */
@@ -112,17 +118,23 @@ label[for="terms"] {
     color: #000; /* Set the same text color as the terms box */
 }
 
+/* Button styles */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 12px;
-    border: none;
+    background-color: white; /* Set background to white */
+    color: black; /* Set text color to black */
+    padding: 0; /* Remove padding to fit the specified height */
+    border: 2px solid black; /* Add a black outline */
     cursor: pointer;
     font-family: Arial, sans-serif;
+    width: 79.54px; /* Set width to 79.54px */
+    height: 21.23px; /* Set height to 21.23px */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 10px 10px; /* Add margin for spacing above, below, and on the sides */
+    float: right; /* Right align the button */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #f0f0f0; /* Lighten background on hover */
 }
 
 /* Styles for the 'createyouraccount.png' image */
