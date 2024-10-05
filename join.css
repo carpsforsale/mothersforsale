@@ -127,8 +127,8 @@ button:hover {
 
 /* Styles for the 'createyouraccount.png' image */
 .create-account-img {
-    width: 50%; /* Set width to 25% of container */
-    max-width: 200px; /* Ensure image doesn't exceed 200px width */
+    width: 100%; /* Set width to 25% of container */
+    max-width: 300px; /* Ensure image doesn't exceed 200px width */
     height: auto; /* Maintain aspect ratio */
 }
 
