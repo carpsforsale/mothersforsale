@@ -6,21 +6,14 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Login Error</title>
     <style>
+        <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #f9f9f9;
             margin: 0;
+            padding: 0;
             width: 800px;
             margin: 0 auto;
-        }
-        h1 {
-            color: #ff0000; /* Red for attention */
-        }
-        p {
-            margin: 20px 0;
         }
 
         .logo-container {
@@ -48,12 +41,35 @@
         .nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
             padding: 0 15px;
         }
 
         .nav a:hover {
             text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px 0;
+            height: 400px; /* Set the height to 800px */
+        }
+
+        .section {
+            height: 400px; /* Change this to 400px */
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        .left {
+            width: 200px;
+        }
+
+        .middle {
+            width: 400px;
+        }
+
+        .right {
+            width: 200px;
         }
 
         footer {
@@ -63,7 +79,7 @@
             width: 800px;
             padding: 10px 0;
             margin: 0;
-            border-radius: 20px;
+            border-radius: 20px; /* Rounded corners added */
         }
 
         .footer-nav {
@@ -75,12 +91,30 @@
         .footer-nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
             padding: 0 15px;
         }
 
         .footer-nav a:hover {
             text-decoration: underline;
+        }
+
+        .new-members {
+            text-align: center;
+            font-size: 0.65em;
+            margin: 0;
+            color: #aaa;
+        }
+
+        .disclaimer {
+            display: flex;
+            justify-content: center;
+            font-size: 0.7em; /* Adjusted for smaller size */
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .copyright {
+            margin-right: 10px; /* Space between copyright and disclaimer */
         }
     </style>
 </head>
