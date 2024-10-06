@@ -186,7 +186,7 @@
         const newMembersCount = Math.floor(Math.random() * 51) + 100;
         document.getElementById('newMembersCount').textContent = newMembersCount;
 
-                // Function to fetch profile snippets
+        // Function to fetch profile snippets
         async function fetchProfileSnippet(url) {
             try {
                 const response = await fetch(url);
@@ -202,19 +202,18 @@
             }
         }
 
-
         // Populate snippets for mothers
         const mothersLinks = document.querySelectorAll('#mothers-list li a');
         mothersLinks.forEach(async (link) => {
             const snippet = await fetchProfileSnippet(link.href);
-            link.nextElementSibling.textContent = snippet; // Insert the snippet next to the link
+            link.nextElementSibling.innerHTML = `<strong>${snippet}</strong>`; // Wrap snippet in <strong> for bold text
         });
 
         // Populate snippets for sons (optional)
         const sonsLinks = document.querySelectorAll('#sons-list li a');
         sonsLinks.forEach(async (link) => {
             const snippet = await fetchProfileSnippet(link.href);
-            link.nextElementSibling.textContent = snippet; // Insert the snippet next to the link
+            link.nextElementSibling.innerHTML = `<strong>${snippet}</strong>`; // Wrap snippet in <strong> for bold text
         });
     </script>
 </body>
