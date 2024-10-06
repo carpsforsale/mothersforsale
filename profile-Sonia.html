@@ -16,7 +16,6 @@
         }
         .container {
             width: 544.93px;
-            border: 1px solid #ccc;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -32,16 +31,20 @@
             text-align: center;
         }
         .right-section {
-            width: 255.53px;
+            width: 225px; /* Adjusted width */
         }
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; /* Ensures cells are joined */
+        }
+        tr {
+            height: 17.38px; /* Set the exact height for the row */
         }
         td {
-            height: 17.38px;
-            border: 1px solid #ccc;
-            padding: 4px;
+            padding: 0; /* Remove padding */
+            line-height: 17.38px; /* Set line-height equal to row height */
+            vertical-align: middle; /* Center content vertically */
+            font-size: 12px; /* Adjust font size to fit within row height */
         }
         td:first-child {
             text-align: right;
