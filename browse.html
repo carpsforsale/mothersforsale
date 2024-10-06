@@ -202,19 +202,19 @@
             }
         }
 
-        // Populate snippets for mothers
+                // Populate snippets for mothers
         const mothersLinks = document.querySelectorAll('#mothers-list li a');
         mothersLinks.forEach(async (link) => {
             const snippet = await fetchProfileSnippet(link.href);
-            link.nextElementSibling.innerHTML = `<strong>${snippet}</strong>`; // Wrap snippet in <strong> for bold text
+            link.nextElementSibling.innerHTML = `<em>${snippet}</em>`; // Wrap snippet in <em> for italic text
         });
-
+        
         // Populate snippets for sons (optional)
         const sonsLinks = document.querySelectorAll('#sons-list li a');
         sonsLinks.forEach(async (link) => {
             const snippet = await fetchProfileSnippet(link.href);
-            link.nextElementSibling.innerHTML = `<strong>${snippet}</strong>`; // Wrap snippet in <strong> for bold text
+            link.nextElementSibling.innerHTML = `<em>${snippet}</em>`; // Wrap snippet in <em> for italic text
         });
-    </script>
-</body>
+            </script>
+    </body>
 </html>
