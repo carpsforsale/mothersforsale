@@ -200,16 +200,26 @@
     </div>
 
     <footer>
-        <span class="address">13120 Crenshaw Blvd, Gardena, CA 90249</span>
-        <span class="new-members">New Members: Sign Up Today!</span>
         <div class="footer-nav">
-            <a href="terms.html">Terms of Service</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
         </div>
-        <span class="disclaimer">
-            <span class="copyright">© 2024 Mothers For Sale. All rights reserved.</span>
-        </span>
     </footer>
+
+    <div class="new-members">
+        New Members this week: <span id="newMembersCount"></span>
+    </div>
+
+    <div class="disclaimer">
+        <p class="copyright">&copy; 1998-2000 Mothers For Sale. All rights reserved. • Disclaimer: User must be emotionally prepared to love and be loved.</p>
+    </div>
+
+    <script>
+        // Generate a random number between 100 and 150
+        const newMembersCount = Math.floor(Math.random() * 51) + 100;
+        document.getElementById('newMembersCount').textContent = newMembersCount;
+    </script>
 </body>
 </html>
