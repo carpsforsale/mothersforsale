@@ -80,8 +80,12 @@ section h2 {
 
 /* Profile description styles */
 .profile-description {
-    font-size: 0.85em;           /* Shrink the font size */
-    color: #666;                 /* A softer color for the description */
-    margin-top: 5px;            /* Add some space above the description */
-    margin-bottom: 0;           /* Remove margin below if not needed */
+    font-size: 0.85em !important;  /* Shrink the font size with !important */
+    color: #666;                   /* A softer color for the description */
+    margin-top: 5px;              /* Add some space above the description */
+    margin-bottom: 0;             /* Remove margin below if not needed */
+    padding: 5px;                 /* Optional: Add padding for better separation */
+    background-color: #f1f1f1;    /* Optional: Add a light background for separation */
+    border-radius: 4px;           /* Optional: Add rounded corners */
 }
+
