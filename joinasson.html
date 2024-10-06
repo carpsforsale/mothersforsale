@@ -157,6 +157,24 @@
             background-color: black; /* Button color on hover */
             color: white; /* Text color on hover */
         }
+
+        /* New styles for images */
+        .image-container {
+            display: grid; /* Use CSS Grid for layout */
+            grid-template-columns: 1fr 2fr 1fr; /* Three equal sections */
+            align-items: center; /* Center items vertically */
+            justify-items: center; /* Center items horizontally */
+        }
+
+        .image-container img {
+            max-width: 80%; /* Control the maximum width of images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .gif {
+            max-width: 50px; /* Adjust the size of the GIF */
+            height: auto; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -178,9 +196,10 @@
 
     <div class="container">
         <div class="section">
-            <div style="text-align: center;">
+            <div class="image-container">
+                <img src="joinasson.gif" alt="Join Us as a Son" class="gif">
                 <img src="joinasson.png" alt="Join Us as a Son" style="max-width: 100%; height: auto;">
-                <img src="joinasson.gif" alt="Join Us as a Son GIF" style="max-width: 100%; height: auto; display: inline-block;">
+                <div></div> <!-- Empty right section -->
             </div>
         </div>
         <div class="section">
