@@ -77,3 +77,11 @@ section h2 {
     border: none;                /* Remove green line */
     border-radius: 0;            /* Remove rounded corners */
 }
+
+/* Profile description styles */
+.profile-description {
+    font-size: 0.85em;           /* Shrink the font size */
+    color: #666;                 /* A softer color for the description */
+    margin-top: 5px;            /* Add some space above the description */
+    margin-bottom: 0;           /* Remove margin below if not needed */
+}
