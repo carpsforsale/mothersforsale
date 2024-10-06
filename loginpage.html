@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=800">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Login Error</title>
+    <link rel="stylesheet" href="testimonials.css">
     <style>
-        <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
@@ -48,30 +48,6 @@
             text-decoration: underline;
         }
 
-        .container {
-            display: flex;
-            margin: 20px 0;
-            height: 400px; /* Set the height to 800px */
-        }
-
-        .section {
-            height: 400px; /* Change this to 400px */
-            box-sizing: border-box;
-            background-color: #ffffff;
-        }
-
-        .left {
-            width: 200px;
-        }
-
-        .middle {
-            width: 400px;
-        }
-
-        .right {
-            width: 200px;
-        }
-
         footer {
             background-color: #ff6666;
             color: white;
@@ -79,7 +55,7 @@
             width: 800px;
             padding: 10px 0;
             margin: 0;
-            border-radius: 20px; /* Rounded corners added */
+            border-radius: 20px;
         }
 
         .footer-nav {
@@ -96,6 +72,42 @@
 
         .footer-nav a:hover {
             text-decoration: underline;
+        }
+
+        .container {
+            background-color: #ffffff; /* White background for the container */
+            margin: 20px 0;
+            padding: 20px; /* Padding for the container */
+            box-sizing: border-box;
+            height: auto; /* Allow the container to expand with content */
+        }
+
+        .section {
+            margin-bottom: 15px; /* Space between sections */
+            padding: 10px; /* Padding for each section */
+            background-color: #f0f0f0; /* Light gray background for sections */
+            border-radius: 5px; /* Slight rounding of corners */
+        }
+
+        h1 {
+            font-family: Courier, monospace; /* Change header font to Courier */
+            font-size: 20px; /* Heading size */
+            margin: 0; /* Remove default margin */
+        }
+
+        p {
+            font-family: Courier, monospace; /* Change paragraph font to Courier */
+            font-size: 14px; /* Paragraph font size */
+            margin: 0; /* Remove default margin */
+            line-height: 1.5; /* Improve readability */
+        }
+
+        .address {
+            text-align: center; /* Center align the address text */
+            font-family: Courier, monospace; /* Keep font consistent */
+            font-size: 14px; /* Match the font size */
+            margin: 0; /* Remove default margin */
+            display: block; /* Ensure it displays as a block for centering */
         }
 
         .new-members {
@@ -135,10 +147,23 @@
         </nav>
     </header>
 
-    <h1>Account Access Unavailable</h1>
-    <p>We regret to inform you that the site has shut down online accounts.</p>
-    <p>Please visit us at our office for assistance:</p>
-    <p><strong>Underneath 13120 Crenshaw Blvd,</strong><br>Gardena, CA 90249</p>
+    <div class="container">
+        <div class="section">
+            <h1>Account Access Unavailable</h1>
+        </div>
+        <div class="section">
+            <p>We regret to inform you that due to ongoing legal investigations and an alarming influx of fake accounts, we have had to temporarily suspend all online accounts. This is a decision we did not take lightly, as we deeply cherish the connections formed on our platform.</p>
+        </div>
+        <div class="section">
+            <p>It is disheartening to witness how some individuals are dedicated to perverting the beautiful bond of love between mothers and their sons. We believe that such relationships deserve the utmost respect and integrity.</p>
+        </div>
+        <div class="section">
+            <p>As a result of these challenges, new accounts will now need to be created in person, as was historically done. We welcome you to visit our offices for assistance:</p>
+        </div>
+        <div class="section">
+            <p><a href="#" class="address"><strong>Underneath 13120 Crenshaw Blvd,</strong><br>Gardena, CA 90249</a></p>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-nav">
