@@ -144,27 +144,26 @@
             <section>
                 <h2>Mothers</h2>
                 <ul id="mothers-list">
-                    <li><a href="#">Mother 1</a></li>
-                    <li><a href="#">Mother 2</a></li>
-                    <li><a href="#">Mother 3</a></li>
-                    <li><a href="profile-Sonia.html">Sonia</a></li>
-                    <li><a href="#">Mother 5</a></li>
+                    <li><a href="profile-mother1.html">Mother 1</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-mother2.html">Mother 2</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-mother3.html">Mother 3</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-Sonia.html">Sonia</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-mother5.html">Mother 5</a> <span class="profile-snippet"></span></li>
                 </ul>
             </section>
 
             <section>
                 <h2>Sons</h2>
                 <ul id="sons-list">
-                    <li><a href="#">Son 1</a></li>
-                    <li><a href="#">Son 2</a></li>
-                    <li><a href="#">Son 3</a></li>
-                    <li><a href="#">Son 4</a></li>
-                    <li><a href="#">Son 5</a></li>
+                    <li><a href="profile-son1.html">Son 1</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-son2.html">Son 2</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-son3.html">Son 3</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-son4.html">Son 4</a> <span class="profile-snippet"></span></li>
+                    <li><a href="profile-son5.html">Son 5</a> <span class="profile-snippet"></span></li>
                 </ul>
             </section>
         </div>
     </main>
-
     <footer>
         <div class="footer-nav">
             <a href="FAQ.html">FAQ</a>
@@ -186,6 +185,36 @@
         // Generate a random number between 100 and 150
         const newMembersCount = Math.floor(Math.random() * 51) + 100;
         document.getElementById('newMembersCount').textContent = newMembersCount;
+
+        // Function to fetch profile snippets
+        async function fetchProfileSnippet(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const text = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html');
+                const profileDescription = doc.querySelector('p'); // Assumes there is a <p> in the profile page
+                return profileDescription ? profileDescription.textContent.slice(0, 150) + '...' : '';
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+                return '';
+            }
+        }
+
+        // Populate snippets for mothers
+        const mothersLinks = document.querySelectorAll('#mothers-list li a');
+        mothersLinks.forEach(async (link) => {
+            const snippet = await fetchProfileSnippet(link.href);
+            link.nextElementSibling.textContent = snippet; // Insert the snippet next to the link
+        });
+
+        // Populate snippets for sons (optional)
+        const sonsLinks = document.querySelectorAll('#sons-list li a');
+        sonsLinks.forEach(async (link) => {
+            const snippet = await fetchProfileSnippet(link.href);
+            link.nextElementSibling.textContent = snippet; // Insert the snippet next to the link
+        });
     </script>
 </body>
 </html>
