@@ -15,14 +15,20 @@ main {
     margin: 0 auto;
     background: #fff;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
     margin-top: 20px;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
+    text-align: left;           /* Left align the text */
+    background-color: #FFB6C1;  /* Light pink background */
+    color: white;               /* White text */
+    font-weight: bold;          /* Bold text */
+    font-size: 1.5em;           /* Increase font size */
+    padding: 2px;               /* Add 2px of padding */
+    margin: 0;                  /* Adjust margin for better spacing */
+    border: none;               /* Remove green line */
+    border-radius: 0;           /* Remove rounded corners */
 }
 
 ul {
@@ -42,4 +48,32 @@ li:last-child {
 footer {
     text-align: center;
     margin-top: 20px;
+}
+
+/* New Styles for Two Columns */
+.profiles-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profiles-container section {
+    width: 48%; /* Both sections will take up 48% of the space */
+}
+
+section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+section h2 {
+    text-align: left;            /* Left align the text */
+    background-color: #FFB6C1;   /* Light pink background */
+    color: white;                /* White text */
+    font-weight: bold;           /* Bold text */
+    font-size: 1.5em;            /* Increase font size */
+    padding: 2px;                /* Add 2px of padding */
+    margin: 0;                   /* Adjust margin */
+    border: none;                /* Remove green line */
+    border-radius: 0;            /* Remove rounded corners */
 }
