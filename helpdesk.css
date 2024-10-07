@@ -36,9 +36,11 @@ h1 {
 h2 {
     margin-top: 20px;
     font-size: 1.5em;
+    font-weight: bold;
     background-color: #ffb6c1; /* Light pink background */
     color: white; /* White font */
-    text-align: center;
+    text-align: left; /* Aligns the text to the left */
+    padding: 0; /* Removes padding */
     border-radius: 0; /* Removes rounded edges */
 }
 
