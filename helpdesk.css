@@ -1,1 +1,73 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+}
 
+/* Helpdesk Container */
+.helpdesk-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px; /* Adds space between the two columns */
+}
+
+/* Column Styling */
+.helpdesk-column {
+    flex: 1; /* Makes each column take up equal width */
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    background-color: #ffb6c1; /* Light pink background */
+    color: white; /* White font */
+    padding: 10px;
+    text-align: center;
+    border-radius: 0; /* Removes rounded edges */
+}
+
+/* Helpdesk List Styling */
+.helpdesk-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.helpdesk-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-style: italic; /* Italicize the description text */
+    font-size: 0.8em; /* Shrink the description text */
+}
+
+.helpdesk-list li:last-child {
+    border-bottom: none;
+}
+
+.helpdesk-list a {
+    color: #3344a5; /* Pink link color */
+    text-decoration: underline; /* Makes links underlined by default */
+    font-weight: bold; /* Bold the link text */
+    font-size: 1.1em; /* Increase link text size */
+    font-style: normal; /* Ensure links are not italic */
+}
+
+.helpdesk-list a:hover {
+    text-decoration: underline; /* Keeps links underlined on hover */
+}
