@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=800">
-    <link rel="icon" type="image/png" href="favicon.png">
     <title>Help Desk</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="helpdesk.css">
     <style>
         body {
@@ -41,7 +41,6 @@
         .nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
             padding: 0 15px;
         }
 
@@ -49,11 +48,39 @@
             text-decoration: underline;
         }
 
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 20px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
         footer {
             background-color: #ff6666;
             color: white;
             text-align: center;
-            width: 800px;
             padding: 10px 0;
             margin: 0;
             border-radius: 20px;
@@ -68,7 +95,6 @@
         .footer-nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
             padding: 0 15px;
         }
 
@@ -76,8 +102,23 @@
             text-decoration: underline;
         }
 
-        .helpdesk-container {
-            padding: 20px;
+        .new-members {
+            text-align: center;
+            font-size: 0.65em;
+            margin: 0;
+            color: #aaa;
+        }
+
+        .disclaimer {
+            display: flex;
+            justify-content: center;
+            font-size: 0.7em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .copyright {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -100,29 +141,28 @@
 
     <div class="helpdesk-container">
         <h1>Help Desk</h1>
-        <p>If you have any questions or need assistance, please feel free to reach out to us through the contact form below or check our FAQs.</p>
         
-        <h2>Contact Us</h2>
-        <form action="submit-helpdesk.php" method="POST">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+        <h2>Quick Help</h2>
+        <ul class="helpdesk-list">
+            <li><a href="#">Creating an Account</a></li>
+            <li><a href="#">Accessing Your Account</a></li>
+            <li><a href="#">Posting / Editing Your Profile</a></li>
+            <li><a href="#">Searching / Browsing Personals</a></li>
+            <li><a href="#">Bookmarking Profiles</a></li>
+            <li><a href="#">Becoming a Premium Member</a></li>
+            <li><a href="#">Other Frequently Asked Questions</a></li>
+        </ul>
 
+        <h2>Other Resources</h2>
+        <ul class="helpdesk-list">
+            <li><a href="#">Online Feedback Form</a> - Your direct link to Customer Service</li>
+            <li><a href="#">Testimonials</a> - What our Members are saying</li>
+            <li><a href="#">Appropriate Behavior</a> - Safety tips for meeting people</li>
+            <li><a href="#">Business Center</a> - Business information and opportunities</li>
+            <li><a href="#">Affiliate Program</a> - Join the affiliate program that pays</li>
+            <li><a href="#">Glossary</a> - Definitions of key terms</li>
+        </ul>
+        
     <footer>
         <div class="footer-nav">
             <a href="FAQ.html">FAQ</a>
@@ -131,5 +171,19 @@
             <a href="terms.html">Terms</a>
         </div>
     </footer>
-</body>
+
+    <div class="new-members">
+        New Members this week: <span id="newMembersCount"></span>
+    </div>
+
+    <div class="disclaimer">
+        <p class="copyright">&copy; 1998-2000 Mothers For Sale. All rights reserved. • Disclaimer: User must be emotionally prepared to love and be loved.</p>
+    </div>
+
+    <script>
+        // Generate a random number between 100 and 150
+        const newMembersCount = Math.floor(Math.random() * 51) + 100;
+        document.getElementById('newMembersCount').textContent = newMembersCount;
+    </script>
+    </body>
 </html>
