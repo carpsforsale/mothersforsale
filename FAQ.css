@@ -1,157 +1,97 @@
-/* General Styles */
+/* Outdated 2000s CSS Styles */
+
 body {
-    font-family: Arial, sans-serif; /* Keep body font as Arial */
-    background-color: #f9f9f9;
+    background-color: #a0c4ff;
+    font-family: "Comic Sans MS", "Arial", sans-serif;
+    color: #000080;
     margin: 0;
     padding: 0;
-    width: 600px;
-    margin: 0 auto;
 }
 
-table {
-    width: 100%; /* Set table width to 100% to fit within the container */
-    max-width: 500px; /* Set max-width to maintain your design */
-    border: 1px solid black;
-    border-spacing: 0; /* No spacing between table cells */
-    margin: 20px auto; /* Center the table */
-    text-align: center; /* Center text within the table */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border: 3px solid #ff69b4;
+    box-shadow: 0 0 20px #f0e68c;
+    padding: 20px;
+    text-align: left;
 }
 
-th {
-    background-color: #8B0000; /* Change this to a darkish red color */
-    color: white;
-    font-family: Arial, sans-serif;
+/* Header */
+h1 {
+    font-size: 36px;
+    color: #ff4500;
+    text-shadow: 2px 2px #ff1493;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px dashed #87cefa;
+    padding-bottom: 10px;
+}
+
+/* Table-style Question-Answer Section */
+.question-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 3px solid #32cd32;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-table th, 
+.question-table td {
+    padding: 10px;
+    border: 2px solid #ff6347;
+}
+
+.question-table th {
+    background-color: #f5f5dc;
+    font-size: 24px;
     font-weight: bold;
-    text-align: center; /* Center text inside the header */
-    padding: 0; /* Remove padding */
-    height: 34.82px; /* Set header height to 34.82px */
-    line-height: 34.82px; /* Center text vertically within the header */
+    text-align: left;
+    width: 30%;
 }
 
-td {
-    padding: 0; /* Remove padding to avoid extra space */
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+.question-table td {
+    background-color: #f0fff0;
 }
 
-/* Specific styles for the label cells */
-.label-cell {
-    width: 165.87px; /* Set text label cell width to 165.87px */
-    height: 29.21px; /* Set cell height to 29.21px */
-    vertical-align: middle; /* Center content vertically in the cell */
-    text-align: right; /* Align text to the right */
+/* Reveal answer when active */
+.question.active + .answer-row td {
+    display: table-cell;
 }
 
-/* Specific styles for the input cells */
-.input-cell {
-    width: 246.15px; /* Set input cell width to 246.15px */
-    height: 29.21px; /* Set cell height to 29.21px */
-    vertical-align: middle; /* Center content vertically in the cell */
-    text-align: left; /* Align text to the left in input cells */
+/* Initially hide answer rows */
+.answer-row td {
+    display: none;
 }
 
-/* Add margin to input elements for horizontal spacing */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    width: 173.99px; /* Set input width to 173.99px */
-    height: 21.23px; /* Set input height to 21.23px */
-    padding: 0; /* Remove padding to reduce space */
-    margin-left: 5px; /* Reduced horizontal space to 5px */
-    font-family: Arial, sans-serif;
+/* Links */
+a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Set odd rows to #cccccc and the first row to white */
-tr:nth-child(1) {
-    background-color: #ffffff; /* First row (header) */
-}
-
-tr:nth-child(2),
-tr:nth-child(4),
-tr:nth-child(6) { /* Set every second row (even) to #cccccc */
-    background-color: #cccccc; 
-}
-
-tr:nth-child(3),
-tr:nth-child(5),
-tr:nth-child(7) { /* Set every third row (odd) to white */
-    background-color: #ffffff; 
-}
-
-/* Set the submitting row background color to match the header */
-tr:last-child {
-    background-color: #8B0000; /* Set background color to match header */
-    color: white; /* Set text color to white for better contrast */
-}
-
-/* Additional Styles */
-.terms-box {
-    width: 330.14px; /* Set to specified width */
-    height: 82.45px; /* Set to specified height */
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 0px;
-    background-color: white; /* Make sure the background is white */
-    text-align: center; /* Center the text within the terms box */
-    margin: 0 auto; /* Center the terms box in the cell */
-    color: #000; /* Set the text color */
-    font-family: 'Courier New', Courier, monospace; /* Force font to Courier */
-}
-
-/* Ensure all text within the terms box uses the Courier font */
-.terms-box * {
-    font-family: 'Courier New', Courier, monospace !important; /* Force font to Courier for all children */
-}
-
-/* Shrink font size for small text */
-.small-text {
-    font-size: 10px; /* Adjusted to smaller size */
-    margin: 10px 0; /* Add margin to separate from other elements */
-}
-
-/* Shrink font size for checkbox label */
-.checkbox-label {
-    font-size: 12px; /* Adjusted to smaller size */
-}
-
-/* Center the label in its row */
-label[for="terms"] {
-    display: block; /* Change display to block for centering */
-    width: 100%; /* Make label take full width of its cell */
-    text-align: center; /* Center text within the label */
-    color: #000; /* Set the same text color as the terms box */
+a:active {
+    color: #ff00ff;
+    text-decoration: blink;
 }
 
 /* Button styles */
 button {
-    background-color: white; /* Set background to white */
-    color: black; /* Set text color to black */
-    padding: 0; /* Remove padding to fit the specified height */
-    border: 2px solid black; /* Add a black outline */
+    background-color: #7fffd4;
+    border: 2px solid #4682b4;
+    padding: 10px 20px;
+    font-size: 18px;
     cursor: pointer;
-    font-family: Arial, sans-serif;
-    width: 79.54px; /* Set width to 79.54px */
-    height: 21.23px; /* Set height to 21.23px */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    margin: 10px 10px; /* Add margin for spacing above, below, and on the sides */
-    float: right; /* Right align the button */
+    margin-top: 10px;
 }
 
-button:hover {
-    background-color: #f0f0f0; /* Lighten background on hover */
-}
-
-body, p, h1, h2, h3, h4, h5, h6, a, span, div {
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: none;
-    font-family: Arial, sans-serif;
-}
-
-/* Additional Styles for Container */
-.container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center content horizontally */
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #696969;
 }
