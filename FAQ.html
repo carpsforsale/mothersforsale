@@ -80,16 +80,29 @@
             padding: 20px;
         }
 
-        .faq-item {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: white;
+        /* Table-style FAQ layout */
+        table.faq-table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .faq-item h3 {
-            margin: 0;
+        table.faq-table th, table.faq-table td {
+            padding: 10px;
+            border: 2px solid #ff6347;
+        }
+
+        table.faq-table th {
+            background-color: #f5f5dc;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        table.faq-table td {
+            background-color: #f0fff0;
         }
     </style>
 </head>
@@ -113,25 +126,41 @@
     <div class="faq-container">
         <h1>Frequently Asked Questions</h1>
 
-        <div class="faq-item">
-            <h3>What is Mothers For Sale?</h3>
-            <p>Mothers For Sale is a community platform for mothers and sons to connect and form meaningful relationships.</p>
-        </div>
+        <table class="faq-table">
+            <tr>
+                <th>What is Mothers For Sale?</th>
+            </tr>
+            <tr>
+                <td>Mothers For Sale is a community platform for mothers and sons to connect and form meaningful relationships.</td>
+            </tr>
+        </table>
 
-        <div class="faq-item">
-            <h3>How do I join?</h3>
-            <p>You can join by filling out the form on our Join page. It's quick and easy!</p>
-        </div>
+        <table class="faq-table">
+            <tr>
+                <th>How do I join?</th>
+            </tr>
+            <tr>
+                <td>You can join by filling out the form on our Join page. It's quick and easy!</td>
+            </tr>
+        </table>
 
-        <div class="faq-item">
-            <h3>Are there any events I can attend?</h3>
-            <p>Yes! We host various events to help our members connect. Check our Events page for more information.</p>
-        </div>
+        <table class="faq-table">
+            <tr>
+                <th>Are there any events I can attend?</th>
+            </tr>
+            <tr>
+                <td>Yes! We host various events to help our members connect. Check our Events page for more information.</td>
+            </tr>
+        </table>
 
-        <div class="faq-item">
-            <h3>How can I contact support?</h3>
-            <p>You can reach out to our support team through the Help Desk page for any assistance you may need.</p>
-        </div>
+        <table class="faq-table">
+            <tr>
+                <th>How can I contact support?</th>
+            </tr>
+            <tr>
+                <td>You can reach out to our support team through the Help Desk page for any assistance you may need.</td>
+            </tr>
+        </table>
     </div>
 
     <footer>
