@@ -1,85 +1,71 @@
+/* Global Styles */
 body {
-    background-color: #a0c4ff;
-    font-family: "Comic Sans MS", "Arial", sans-serif;
-    color: #000080;
-    margin: 0;
-    padding: 0;
+    background-color: #FFB6C1; /* Light Pink background for a retro feel */
+    font-family: "Comic Sans MS", "Arial", sans-serif; /* Use Comic Sans MS first, then Arial */
+    color: #000; /* Default text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* Container for main content */
 .container {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #ffffff;
-    border: 3px solid #ff69b4;
-    box-shadow: 0 0 20px #f0e68c;
-    padding: 20px;
-    text-align: left;
+    width: 80%; /* Set width to 80% */
+    margin: 50px auto; /* Center container */
+    background-color: #FFFDD0; /* Cream background for container */
+    border: 5px solid #FF6F61; /* Coral border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+    padding: 20px; /* Padding inside the container */
+    text-align: left; /* Align text to the left */
 }
 
 /* Header */
 h1 {
-    font-size: 36px;
-    color: #ff4500;
-    text-shadow: 2px 2px #ff1493;
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 4px dashed #87cefa;
-    padding-bottom: 10px;
+    font-size: 36px; /* Font size for main header */
+    color: #FF6F61; /* Coral color for the main header */
+    text-shadow: 2px 2px #FFB6C1; /* Light pink shadow for the header */
+    text-align: center; /* Center the header */
+    margin-bottom: 20px; /* Space below the header */
+    border-bottom: 4px dashed #FFB6C1; /* Dashed border below header */
+    padding-bottom: 10px; /* Padding below header */
 }
 
-/* Table-style Question-Answer Section */
-.question-table {
-    width: 100%;
-    margin-bottom: 20px;
-    border-collapse: collapse;
-    border: 3px solid #32cd32;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+/* Event styling */
+.event {
+    width: 100%; /* Full width for event section */
+    margin-bottom: 20px; /* Space below each event */
+    border: 3px solid #FFFDD0; /* Border for event */
+    background-color: #FFFDD0; /* Cream background for events */
+    border-radius: 10px; /* Rounded corners for events */
+    padding: 15px; /* Padding inside each event */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for events */
 }
 
-.question-table th, 
-.question-table td {
-    padding: 10px;
-    border: 2px solid #ff6347;
+/* Event title */
+.event h2 {
+    font-size: 28px; /* Font size for event title */
+    color: #FF6F61; /* Coral color for event title */
+    text-decoration: underline; /* Underline the title */
 }
 
-.question-table th {
-    background-color: #f5f5dc;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-    width: 30%;
-}
-
-.question-table td {
-    background-color: #f0fff0;
-}
-
-/* Reveal answer when active */
-.question.active + .answer-row td {
-    display: table-cell;
-}
-
-/* Initially hide answer rows */
-.answer-row td {
-    display: none;
+/* Event details */
+.event p {
+    font-size: 18px; /* Font size for event details */
+    color: #000; /* Black color for text */
 }
 
 /* Button styles */
 button {
-    background-color: #7fffd4;
-    border: 2px solid #4682b4;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #FFB6C1; /* Light Pink background for buttons */
+    border: 3px solid #FF6F61; /* Coral border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor for buttons */
+    margin-top: 10px; /* Space above buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
-@media only screen and (max-width: 1200px) {
-    body {
-        overflow-x: auto; /* Enable horizontal scrolling */
-    }
-    .container {
-        width: 1200px; /* Set a fixed width for your layout */
-        margin: 0 auto; /* Center the container */
-    }
+button:hover {
+    background-color: #FF6F61; /* Change to Coral on hover */
+    color: #FFF; /* Change text color to white on hover */
 }
