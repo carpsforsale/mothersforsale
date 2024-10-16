@@ -13,7 +13,6 @@ body {
     margin: 50px auto; /* Center container */
     background-color: #FFFDD0; /* Cream background for container */
     border: 5px solid #FF6F61; /* Coral border */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
     padding: 20px; /* Padding inside the container */
     text-align: left; /* Align text to the left */
 }
