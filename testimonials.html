@@ -184,3 +184,40 @@
     </footer>
 </body>
 </html>
+    <script>
+        // Generate a random number between 100 and 150
+        const newMembersCount = Math.floor(Math.random() * 51) + 100;
+        document.getElementById('newMembersCount').textContent = newMembersCount;
+
+        // Function to fetch profile snippets
+        async function fetchProfileSnippet(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const text = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html');
+                const profileDescription = doc.querySelector('.profile-description'); // Change to the specific class or ID you need
+                return profileDescription ? profileDescription.textContent.slice(0, 150) + '...' : '';
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+                return '';
+            }
+        }
+
+                // Populate snippets for mothers
+        const mothersLinks = document.querySelectorAll('#mothers-list li a');
+        mothersLinks.forEach(async (link) => {
+            const snippet = await fetchProfileSnippet(link.href);
+            link.nextElementSibling.innerHTML = `<em>${snippet}</em>`; // Wrap snippet in <em> for italic text
+        });
+        
+        // Populate snippets for sons (optional)
+        const sonsLinks = document.querySelectorAll('#sons-list li a');
+        sonsLinks.forEach(async (link) => {
+            const snippet = await fetchProfileSnippet(link.href);
+            link.nextElementSibling.innerHTML = `<em>${snippet}</em>`; // Wrap snippet in <em> for italic text
+        });
+            </script>
+    </body>
+</html>
