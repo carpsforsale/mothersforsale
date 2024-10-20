@@ -1,0 +1,59 @@
+/* Body styles */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Retro monospace font */
+    background-color: #FFFDD0; /* Light yellow background */
+    color: #333; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    margin: 0 auto; /* Center the body */
+}
+
+/* Testimonials container styles */
+.testimonials-container {
+    padding: 20px; /* Padding for the testimonials section */
+}
+
+/* Testimonial title styles */
+h1 {
+    text-align: center; /* Center the title */
+    font-size: 2em; /* Larger font size for the title */
+    margin-bottom: 10px; /* Margin below the title */
+    color: #FF6F61; /* Coral color for the title */
+}
+
+/* Paragraph styles */
+p {
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Individual testimonial styles */
+.testimonial {
+    border: 2px solid #FFB6C1; /* Solid orange-red border */
+    margin-bottom: 10px; /* Space between testimonials */
+    padding: 15px; /* Padding for testimonial box */
+    background-color: #FFFFFF; /* White background for testimonials */
+    display: flex; /* Use flexbox to create a column layout */
+    justify-content: space-between; /* Space between columns */
+}
+
+/* Testimonial content styles */
+.testimonial-content {
+    display: flex; /* Display as flex for side-by-side layout */
+    width: 100%; /* Full width */
+}
+
+/* Testimonial text styles */
+.testimonial-text {
+    flex: 1; /* Allow testimonial text to take full width */
+    padding: 10px; /* Padding around text */
+}
+
+/* Author name styles */
+.author-name {
+    padding: 10px; /* Padding around name */
+    font-weight: bold; /* Make the name bold */
+    color: #FF; /* Change color to orange-red */
+    align-self: flex-end; /* Align the name to the bottom */
+    width: 150px; /* Fixed width for author names */
+}
