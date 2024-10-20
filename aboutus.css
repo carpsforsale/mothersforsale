@@ -33,9 +33,9 @@ h2 {
     margin-bottom: 15px;
     text-align: left;
     padding: 10px;
-    border: 2px solid #ff66cc;
+    border: 2px solid #FF6F61;
     border-radius: 100px;
-    background-color: #ff66cc;
+    background-color: #FF6F61;
     display: inline-block; /* Shrink box to fit text */
     
     /* Tilt the text slightly upward */
