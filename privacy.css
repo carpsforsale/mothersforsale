@@ -12,7 +12,6 @@ table {
     margin: 0 auto; /* Center the table */
     border-collapse: collapse; /* Remove space between borders */
     background-color: #fff; /* White background for the table */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 td {
