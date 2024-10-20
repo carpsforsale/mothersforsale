@@ -1,1 +1,69 @@
+/* Retro Background and Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/* Main Content Styling */
+main {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: none;
+    margin: 0;
+}
+
+/* Awkward Heading Styles */
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: left;
+    color: #660066;
+    text-shadow: none;
+    margin-top: 0;
+    font-size: 3em; /* Larger H1 */
+}
+
+/* Boxed Header Styling for H2 */
+h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans for H2 */
+    color: #fff;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #ff66cc; /* Solid border for retro look */
+    border-radius: 100px; /* Rounded box for a quirky look */
+    background-color: #ff66cc; /* Light pink background */
+    display: inline-block; /* Shrink box to fit text */
+}
+
+/* Awkward List Styling */
+ul {
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #5A5A5A;
+    list-style: square;
+    padding-left: 10px;
+    margin-top: 5px;
+   
+}
+address {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: centered;
+    color: #5A5A5A;
+    list-style: square;
+    padding-left: 10px;
+    margin-top: 5px;
+   }
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Bigger list items */
+}
