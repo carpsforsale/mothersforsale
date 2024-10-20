@@ -1,70 +1,71 @@
 /* Global Styles */
 body {
     background-color: #FFB6C1; /* Light Pink background for a retro feel */
-    font-family: "Comic Sans MS", "Arial", sans-serif; /* Use Comic Sans MS first, then Arial */
+    font-family: "Comic Sans MS", "Arial", sans-serif; /* Comic Sans first, fallback to Arial */
     color: #000; /* Default text color */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
 }
 
-/* Container for main content */
+/* Main Container */
 .container {
-    width: 80%; /* Set width to 80% */
-    margin: 50px auto; /* Center container */
-    background-color: #FFFDD0; /* Cream background for container */
+    width: 80%; 
+    margin: 40px auto; /* Slightly reduced top/bottom margin */
+    background-color: #FFFDD0; /* Cream background */
     border: 5px solid #FF6F61; /* Coral border */
-    padding: 20px; /* Padding inside the container */
-    text-align: left; /* Align text to the left */
+    padding: 15px; /* Compact padding */
+    text-align: left;
 }
 
 /* Header */
 h1 {
-    font-size: 36px; /* Font size for main header */
-    color: #FF6F61; /* Coral color for the main header */
-    text-shadow: 2px 2px #FFB6C1; /* Light pink shadow for the header */
-    text-align: center; /* Center the header */
-    margin-bottom: 20px; /* Space below the header */
-    border-bottom: 4px dashed #FFB6C1; /* Dashed border below header */
-    padding-bottom: 10px; /* Padding below header */
+    font-size: 34px; /* Slightly smaller font */
+    color: #FF6F61;
+    text-shadow: 2px 2px #FFB6C1; /* Light pink shadow */
+    text-align: center;
+    margin-bottom: 25px; /* Increased spacing under header */
+    border-bottom: 4px dashed #FFB6C1;
+    padding-bottom: 8px;
 }
 
-/* Event styling */
+/* Event Styling */
 .event {
-    width: 100%; /* Full width for event section */
-    margin-bottom: 20px; /* Space below each event */
-    border: 3px solid #FFFDD0; /* Border for event */
-    background-color: #FFFDD0; /* Cream background for events */
-    border-radius: 10px; /* Rounded corners for events */
-    padding: 15px; /* Padding inside each event */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for events */
+    width: 100%;
+    margin-bottom: 25px; /* Increased space between events */
+    border: 2px solid #FFB6C1; /* Thinner border for a tighter look */
+    background-color: #FFFDD0;
+    border-radius: 8px; /* Slightly smaller radius */
+    padding: 12px 15px; /* Compact internal padding */
 }
 
-/* Event title */
+/* Event Title */
 .event h2 {
-    font-size: 28px; /* Font size for event title */
-    color: #FF6F61; /* Coral color for event title */
-    text-decoration: underline; /* Underline the title */
+    font-size: 24px; /* More compact title size */
+    color: #FF6F61;
+    text-decoration: underline;
+    margin-bottom: 10px; /* Reduced space under title */
 }
 
-/* Event details */
+/* Event Details */
 .event p {
-    font-size: 18px; /* Font size for event details */
-    color: #000; /* Black color for text */
+    font-size: 16px; /* Slightly smaller font for details */
+    line-height: 1.4; /* Compact line height */
+    color: #000;
 }
 
-/* Button styles */
+/* Button Styles */
 button {
-    background-color: #FFB6C1; /* Light Pink background for buttons */
-    border: 3px solid #FF6F61; /* Coral border for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    padding: 10px 20px; /* Padding inside buttons */
-    font-size: 18px; /* Font size for button text */
-    cursor: pointer; /* Pointer cursor for buttons */
-    margin-top: 10px; /* Space above buttons */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    background-color: #FFB6C1;
+    border: 2px solid #FF6F61; /* Thinner border for buttons */
+    border-radius: 5px;
+    padding: 8px 16px; /* Compact button padding */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px; /* Slightly reduced margin */
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #FF6F61; /* Change to Coral on hover */
-    color: #FFF; /* Change text color to white on hover */
+    background-color: #FF6F61;
+    color: #FFF;
 }
