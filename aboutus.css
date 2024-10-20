@@ -37,6 +37,10 @@ h2 {
     border-radius: 100px;
     background-color: #ff66cc;
     display: inline-block; /* Shrink box to fit text */
+    
+    /* Tilt the text slightly upward */
+    transform: rotate(-2deg); /* Slight upward tilt */
+    transform-origin: bottom left; /* Control where the rotation pivots */
 }
 
 /* Awkward List Styling */
