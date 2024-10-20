@@ -20,10 +20,10 @@ td {
 }
 
 h1 {
-    background-color: #9999cc; /* Header background color */
+    background-color: #FFB6C1; /* Header background color */
     color: #ffffff; /* Header text color */
     font-size: 1.2em; /* Header font size */
-   font-weight: bold;
+    font-weight: bold;
     text-align: left;
 }
 
@@ -38,7 +38,7 @@ p {
 h2 {
    font-size: 1rem;
    font-weight: bold;
-   color: #333399;
+   color: #FF6F61;
 }
 
 a {
