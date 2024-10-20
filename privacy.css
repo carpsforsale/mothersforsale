@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Content Styling */
+main {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Arial', cursive, sans-serif;
+    text-align: left;
+    text-shadow: none;
+    margin-top: 0;
+    font-size: 3em; 
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 10px;
+
+}
+
+/* Awkward List Styling */
+ul {
+    list-style: square;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Bigger list items */
+}
